@@ -1,0 +1,73 @@
+﻿@page "/CompletedPrograms/ViewCompletedProgram/{ProgramPlanId}"
+
+<div id="main">
+    <div class="primary-container">
+        
+        @foreach (var prop in ProgramPlanlist.Where(u => u.ProgramPlanId == Convert.ToInt32(ProgramPlanId)))
+        {
+            <div class="wizard-heading">Completed Programs @prop.ProgramPlanId</div>
+            <RadzenCard>
+            <div class="row">
+                <div class="col-5" style="margin-right:100px;">
+
+                    <label class="label">Date</label>
+                     <RadzenTextBox TValue="string" Class="w-100" Placeholder="" Style="margin-bottom:10px;font-size:0.9em;" Disabled>
+                    </RadzenTextBox> <br />
+
+                    <label class="label">Program Catogery</label>
+                     <RadzenTextBox TValue="string" Class="w-100" Placeholder="" Style="margin-bottom:10px;font-size:0.9em;" Disabled>
+                    </RadzenTextBox> <br />
+
+                    <label class="label">Program</label>
+                     <RadzenTextBox TValue="string" Class="w-100" Placeholder="" Style="margin-bottom:10px;font-size:0.9em;" Disabled>
+                    </RadzenTextBox> <br />
+
+                    <label class="label">Program Type</label>
+                     <RadzenTextBox TValue="string" Class="w-100" Placeholder="" Style="margin-bottom:10px;font-size:0.9em;" Disabled>
+                    </RadzenTextBox> <br />
+
+                    <label class="label">Work Attended Place</label>
+                     <RadzenTextBox TValue="string" Class="w-100" Placeholder="" Style="margin-bottom:10px;font-size:0.9em;" Disabled>
+                    </RadzenTextBox> <br />
+
+                    <label class="label">Expected Duty</label>
+                     <RadzenTextBox TValue="string" Class="w-100" Placeholder="" Style="margin-bottom:10px;font-size:0.9em;" Disabled>
+                    </RadzenTextBox> <br />
+
+                    <label class="label">Output</label>
+                     <RadzenTextBox TValue="string" Class="w-100" Placeholder="" Style="margin-bottom:10px;font-size:0.9em;" Disabled>
+                    </RadzenTextBox> <br />
+
+                    <label class="label">Outcome</label>
+                     <RadzenTextBox TValue="string" Class="w-100" Placeholder="" Style="margin-bottom:10px;font-size:0.9em;" Disabled>
+                    </RadzenTextBox> <br />
+
+            </div>
+            <a href="/planning/CompletedPrograms">
+                 <input type="button" class="primary-btn" value="Back" style="width:220px;" />
+               </a>
+            </div>
+
+            </RadzenCard>           
+        }
+    </div>
+</div>
+
+@code {
+    [Parameter]
+    public string ProgramPlanId { get; set; }
+
+    //[Parameter]
+    //public ProgramTarget Target { get; set; }
+
+    private List<ProgramPlan> ProgramPlanlist = new List<ProgramPlan>();
+
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+
+        ProgramPlanController programPlanController = ControllerFactory.CreateProgramPlanController();
+        ProgramPlanlist = programPlanController.GetAllProgramPlan(false,false,false,false,false,false);
+
+    }
+}

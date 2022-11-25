@@ -1,0 +1,65 @@
+﻿using ManPowerCore.Common;
+using ManPowerCore.Domain;
+using ManPowerCore.Infrastructure;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ManPowerCore.Controller
+{
+    public interface UserTypeController
+    {
+        List<UserType> GetAllUserType();
+        UserType GetUserType(int id);
+    }
+
+    public class UserTypeControllerImpl : UserTypeController
+    {
+        DBConnection dBConnection;
+        UserTypeDAO userTypeDAO = DAOFactory.CreateUserTypeDAO();
+
+        public List<UserType> GetAllUserType()
+        {
+            try
+            {
+                dBConnection = new DBConnection();
+                List<UserType> list = userTypeDAO.GetAllUserType(dBConnection);
+                return list;
+
+            }
+            catch (Exception)
+            {
+                dBConnection.RollBack();
+                throw;
+            }
+            finally
+            {
+                if (dBConnection.con.State == System.Data.ConnectionState.Open)
+                    dBConnection.Commit();
+            }
+
+        }
+
+        public UserType GetUserType(int id)
+        {
+            DBConnection dbConnection = new DBConnection();
+            try
+            {
+                UserTypeDAO DAO = DAOFactory.CreateUserTypeDAO();
+                return DAO.GetUserType(id, dbConnection);
+            }
+            catch (Exception ex)
+            {
+                dbConnection.RollBack();
+                throw;
+            }
+            finally
+            {
+                if (dbConnection.con.State == System.Data.ConnectionState.Open)
+                    dbConnection.Commit();
+            }
+        }
+    }
+}

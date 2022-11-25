@@ -1,0 +1,98 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\SLIIT\\Intern bellwantage\\Man Power\\ManPowerWeb\\ManPowerWeb.csproj": {}
+  },
+  "projects": {
+    "D:\\SLIIT\\Intern bellwantage\\Man Power\\ManPowerCore\\ManPowerCore.csproj": {
+      "restore": {
+        "projectUniqueName": "D:\\SLIIT\\Intern bellwantage\\Man Power\\ManPowerCore\\ManPowerCore.csproj",
+        "projectName": "ManPowerCore",
+        "projectPath": "D:\\SLIIT\\Intern bellwantage\\Man Power\\ManPowerCore\\ManPowerCore.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "D:\\SLIIT\\Intern bellwantage\\Man Power\\ManPowerWeb\\ManPowerWeb.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\SLIIT\\Intern bellwantage\\Man Power\\ManPowerWeb\\ManPowerWeb.csproj",
+        "projectName": "ManPowerWeb",
+        "projectPath": "D:\\SLIIT\\Intern bellwantage\\Man Power\\ManPowerWeb\\ManPowerWeb.csproj",
+        "packagesPath": "C:\\Users\\Maduka\\.nuget\\packages\\",
+        "outputPath": "D:\\SLIIT\\Intern bellwantage\\Man Power\\ManPowerWeb\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Maduka\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "D:\\SLIIT\\Intern bellwantage\\Man Power\\ManPowerCore\\ManPowerCore.csproj": {
+                "projectPath": "D:\\SLIIT\\Intern bellwantage\\Man Power\\ManPowerCore\\ManPowerCore.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "CurrieTechnologies.Razor.SweetAlert2": {
+              "target": "Package",
+              "version": "[5.2.1, )"
+            },
+            "Radzen.Blazor": {
+              "target": "Package",
+              "version": "[3.20.12, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.304\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

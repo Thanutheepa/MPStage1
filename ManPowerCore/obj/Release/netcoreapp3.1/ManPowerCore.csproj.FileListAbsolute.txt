@@ -1,0 +1,30 @@
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerCore\bin\Release\netcoreapp3.1\ManPowerCore.deps.json
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerCore\bin\Release\netcoreapp3.1\ManPowerCore.dll
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerCore\bin\Release\netcoreapp3.1\ManPowerCore.pdb
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerCore\obj\Release\netcoreapp3.1\ManPowerCore.csproj.AssemblyReference.cache
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerCore\obj\Release\netcoreapp3.1\ManPowerCore.GeneratedMSBuildEditorConfig.editorconfig
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerCore\obj\Release\netcoreapp3.1\ManPowerCore.AssemblyInfoInputs.cache
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerCore\obj\Release\netcoreapp3.1\ManPowerCore.AssemblyInfo.cs
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerCore\obj\Release\netcoreapp3.1\ManPowerCore.csproj.CoreCompileInputs.cache
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerCore\obj\Release\netcoreapp3.1\ManPowerCore.dll
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerCore\obj\Release\netcoreapp3.1\ManPowerCore.pdb
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerCore\bin\Release\netcoreapp3.1\ManPowerCore.deps.json
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerCore\bin\Release\netcoreapp3.1\ManPowerCore.dll
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerCore\bin\Release\netcoreapp3.1\ManPowerCore.pdb
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerCore\obj\Release\netcoreapp3.1\ManPowerCore.csproj.AssemblyReference.cache
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerCore\obj\Release\netcoreapp3.1\ManPowerCore.GeneratedMSBuildEditorConfig.editorconfig
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerCore\obj\Release\netcoreapp3.1\ManPowerCore.AssemblyInfoInputs.cache
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerCore\obj\Release\netcoreapp3.1\ManPowerCore.AssemblyInfo.cs
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerCore\obj\Release\netcoreapp3.1\ManPowerCore.csproj.CoreCompileInputs.cache
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerCore\obj\Release\netcoreapp3.1\ManPowerCore.dll
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerCore\obj\Release\netcoreapp3.1\ManPowerCore.pdb
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerCore\bin\Release\netcoreapp3.1\ManPowerCore.deps.json
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerCore\bin\Release\netcoreapp3.1\ManPowerCore.dll
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerCore\bin\Release\netcoreapp3.1\ManPowerCore.pdb
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerCore\obj\Release\netcoreapp3.1\ManPowerCore.csproj.AssemblyReference.cache
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerCore\obj\Release\netcoreapp3.1\ManPowerCore.GeneratedMSBuildEditorConfig.editorconfig
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerCore\obj\Release\netcoreapp3.1\ManPowerCore.AssemblyInfoInputs.cache
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerCore\obj\Release\netcoreapp3.1\ManPowerCore.AssemblyInfo.cs
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerCore\obj\Release\netcoreapp3.1\ManPowerCore.csproj.CoreCompileInputs.cache
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerCore\obj\Release\netcoreapp3.1\ManPowerCore.dll
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerCore\obj\Release\netcoreapp3.1\ManPowerCore.pdb

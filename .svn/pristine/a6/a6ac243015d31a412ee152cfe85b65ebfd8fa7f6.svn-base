@@ -1,0 +1,73 @@
+﻿@inject Blazored.LocalStorage.ILocalStorageService LocalStore
+@inject Blazored.SessionStorage.ISessionStorageService sessionStorage
+@using ManPowerCore.Domain
+@using ManPowerCore.Common
+@using ManPowerCore.Controller
+@using ManPowerCore.Infrastructure
+<!-- ======= Mobile nav toggle button ======= -->
+@*<i class="bi bi-list mobile-nav-toggle d-xl-none"></i>*@
+
+<!-- ======= Header ======= -->
+<header id="header">
+    <div class="d-flex flex-column">
+        <nav id="navbar" class="nav-menu navbar">
+            <ul>
+                <li><a href="/index2" class="nav-link scrollto" @onclick="() => expandSubMenu = !expandSubMenu">Planning<i class="bx bx-down-arrow-alt"></i></a></li>
+                
+            <ul style="margin-left:20px">
+
+                    @foreach (var prop in FunctionList)
+                    {
+                        <li><a href="@prop.Url" class="nav-link scrollto"> <span>@prop.FunctionName</span></a></li>
+                    }
+                    
+            </ul>
+        
+            </ul>
+
+        </nav>
+    </div>
+</header>
+
+
+@code {
+    private bool collapseNavMenu = true;
+    private bool expandSubMenu;
+
+    private string? NavMenuCssClass => collapseNavMenu ? "collapse" : null;
+
+    private void ToggleNavMenu()
+    {
+        collapseNavMenu = !collapseNavMenu;
+    }
+
+    List<AutSystemRoleFunction> AutFunctionList = new List<AutSystemRoleFunction>();
+    List<AutFunction> FunctionList = new List<AutFunction>();
+
+    public SystemUser userRegistationDetails;
+
+
+
+    protected override async Task OnAfterRenderAsync(bool firstRender)
+    {
+
+        if (firstRender)
+        {
+            string aa = await sessionStorage.GetItemAsync<string>("myFlag");
+            userRegistationDetails = await LocalStore.GetItemAsync<SystemUser>("UserDetails");
+            // userRegistationDetails = await sessionStorage.GetItemAsync<SystemUser>("UserDetails");  
+
+            AutSystemRoleFunctionController autSystemRoleFunctionController = ControllerFactory.CreateAutSystemRoleFunctionController();
+            AutFunctionList = autSystemRoleFunctionController.GetAllAutSystemRoleFunctionById(userRegistationDetails.UserTypeId);
+
+            foreach (var item in AutFunctionList)
+            {
+                AutFunctionController autFunctionController = ControllerFactory.CreateAutFunctionController();
+                FunctionList.AddRange(autFunctionController.GetAllAutFunctionById(item.AutFunctionId));
+            }
+            StateHasChanged();
+        }
+    }
+
+    
+}

@@ -1,0 +1,277 @@
+﻿@page "/dme21"
+@inject NavigationManager NavigationManager
+
+<div id="main">
+    <RadzenCard Style="padding-left:40px;">
+        <div class="wizard-heading">DME 21</div>
+        <div class="row">
+            <div class="col-6">
+                <div class="row">
+                    <div class="col-2">
+                        <RadzenLabel Text="Year" />
+                    </div>
+                    <div class="col-7">
+                        <RadzenDropDown AllowClear="true" TValue="string" Class="w-100" Placeholder="" Data="@year" Name="year"
+                                        @bind-Value="selectedYear" Style="margin-bottom:10px;font-size:0.9em;" /><br />
+                        <RadzenRequiredValidator Component="year" Text="Year is required" Style="position: absolute" />
+                    </div>
+                </div>
+                <br />
+            </div>
+            <div class="col-6">
+                <div class="row">
+                    <div class="col-2">
+                        <RadzenLabel Text="Month" />
+                    </div>
+                    <div class="col-7">
+                        <RadzenDropDown AllowClear="true" TValue="int" Class="w-100" Placeholder="" Data="@monthTable" Name="Month"
+                                        ValueProperty="monthNumber" TextProperty="monthName" @bind-Value="month" Style="margin-bottom:10px;font-size:0.9em;" />
+                        <RadzenRequiredValidator Component="Month" Text="Month is required" Style="position: absolute" />
+                    </div>
+                </div>
+                <br />
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-2">
+                <RadzenButton Shade="Shade.Darker" Text="Search" ButtonStyle="ButtonStyle.Secondary" ButtonType="ButtonType.Submit" Style="width:130px;" Click="() => isClicked = true" />
+            </div>
+            <div class="col-3">
+                <a href="/addDme21">
+                    <RadzenButton Shade="Shade.Darker" Text="Add New DME 21" ButtonStyle="ButtonStyle.Secondary" Style="width:170px;" />
+                </a>
+            </div>
+        </div>
+
+        <br /><br/>
+
+        @*--------------------------- table ----------------------------*@
+
+        @if (taskAllocations.Count != 0 && String.IsNullOrWhiteSpace(selectedYear) && month == 0)
+        {
+            <RadzenDataGrid Style="width: 900px" AllowFiltering="true" AllowColumnResize="true" AllowAlternatingRows="false" FilterMode="FilterMode.Advanced" AllowSorting="true" PageSize="5" AllowPaging="true" PagerHorizontalAlign="HorizontalAlign.Left" ShowPagingSummary="true"
+                        Data="@taskAllocations" TItem="TaskAllocation" ColumnWidth="400px" LogicalFilterOperator="LogicalFilterOperator.Or">    
+                <Columns>
+                    <RadzenDataGridColumn TItem="TaskAllocation" Property="TaskYearMonth.Year" Title="Year" Width="200px" TextAlign="TextAlign.Center" />
+                    <RadzenDataGridColumn TItem="TaskAllocation" Title="Month" Width="200px" TextAlign="TextAlign.Center" >
+                        <Template Context="taskAllocation">
+                                @foreach(var i in monthTable.Where(u => u.monthNumber == taskAllocation.TaskYearMonth.Month))
+                                {
+                                    monthName = i.monthName;
+                                }
+                                @monthName
+                            </Template>
+                        </RadzenDataGridColumn>
+                    <RadzenDataGridColumn TItem="TaskAllocation" Title="Status" Width="200px" TextAlign="TextAlign.Center">
+                        <Template Context="taskAllocation">
+                            @foreach (var i in pStatus.Where(u => u.ProjectStatusId == taskAllocation.StatusId))
+                            {
+                                status = i.ProjectStatusName;
+                            }
+                            @status
+                        </Template>
+                    </RadzenDataGridColumn>                    
+                    <RadzenDataGridColumn TItem="TaskAllocation" Title="Action" Width="220px" TextAlign="TextAlign.Center">
+                        <Template Context="taskAllocation">
+                            <RadzenButton Shade="Shade.Lighter" ButtonStyle="ButtonStyle.Success" Text="View" Size="ButtonSize.Medium" Click="() => navigateToView(taskAllocation.TaskYearMonth.Month)" @onclick:stopPropagation="true" Style="width:80px;"> </RadzenButton>
+                        </Template>
+                    </RadzenDataGridColumn>
+                </Columns>
+            </RadzenDataGrid>
+            
+        }
+
+        else if (!String.IsNullOrWhiteSpace(selectedYear))
+        {
+            count = taskAllocations.Where(u => u.TaskYearMonth.Year == int.Parse(selectedYear)).Count();
+            @if (count == 0)
+            {
+                <RadzenDataGrid TItem="TaskAllocation" Data="@myList">
+                    <EmptyTemplate>
+                        <p style="color: lightgrey; font-size: 24px; text-align: center; margin: 2rem;">No records to display.</p>
+                    </EmptyTemplate>
+
+                    <Columns>
+                        <RadzenDataGridColumn TItem="TaskAllocation" Title="Year" Width="200px" TextAlign="TextAlign.Center">
+                        </RadzenDataGridColumn>
+                        <RadzenDataGridColumn TItem="TaskAllocation" Title="Month" Width="200px" TextAlign="TextAlign.Center">
+                        </RadzenDataGridColumn>
+                        <RadzenDataGridColumn TItem="TaskAllocation" Title="Action" Width="220px" TextAlign="TextAlign.Center" />
+                    </Columns>
+                </RadzenDataGrid>
+            }
+            else
+            {
+                <RadzenDataGrid Style="width: 900px" AllowFiltering="true" AllowColumnResize="true" AllowAlternatingRows="false" FilterMode="FilterMode.Advanced" AllowSorting="true" PageSize="5" AllowPaging="true" PagerHorizontalAlign="HorizontalAlign.Left" ShowPagingSummary="true"
+                        Data="@taskAllocations.Where(u => u.TaskYearMonth.Year == int.Parse(selectedYear))" TItem="TaskAllocation" ColumnWidth="400px" LogicalFilterOperator="LogicalFilterOperator.Or">
+                    <Columns>
+                        <RadzenDataGridColumn TItem="TaskAllocation" Property="TaskYearMonth.Year" Title="Year" Width="200px" TextAlign="TextAlign.Center" />
+                        <RadzenDataGridColumn TItem="TaskAllocation" Title="Month" Width="200px" TextAlign="TextAlign.Center">
+                            <Template Context="myList">
+                                @foreach (var i in monthTable.Where(u => u.monthNumber == myList.TaskYearMonth.Month))
+                                {
+                                    monthName = i.monthName;
+                                }
+                                @monthName
+                            </Template>
+                        </RadzenDataGridColumn>
+                        <RadzenDataGridColumn TItem="TaskAllocation" Title="Status" Width="200px" TextAlign="TextAlign.Center">
+                            <Template Context="taskAllocation">
+                                @foreach (var i in pStatus.Where(u => u.ProjectStatusId == taskAllocation.StatusId))
+                                {
+                                    status = i.ProjectStatusName;
+                                }
+                                @status
+                            </Template>
+                        </RadzenDataGridColumn>
+                        <RadzenDataGridColumn TItem="TaskAllocation" Title="Action" Width="220px" TextAlign="TextAlign.Center">
+                            <Template Context="myList">
+                                <RadzenButton Shade="Shade.Lighter" ButtonStyle="ButtonStyle.Success" Text="View" Size="ButtonSize.Medium" Click="() => navigateToView(myList.TaskYearMonth.Month)" @onclick:stopPropagation="true" Style="width:80px;"> </RadzenButton>
+                            </Template>
+                        </RadzenDataGridColumn>
+                    </Columns>
+                </RadzenDataGrid>
+            }
+        }
+
+        else if (month != 0)
+        {
+            count = taskAllocations.Where(u => u.TaskYearMonth.Month == month).Count();
+            @if (count == 0)
+            {
+                <RadzenDataGrid TItem="TaskAllocation" Data="@myList">
+                    <EmptyTemplate>
+                        <p style="color: lightgrey; font-size: 24px; text-align: center; margin: 2rem;">No records to display.</p>
+                    </EmptyTemplate>
+
+                    <Columns>
+                        <RadzenDataGridColumn TItem="TaskAllocation" Title="Year" Width="200px" TextAlign="TextAlign.Center">
+                        </RadzenDataGridColumn>
+                        <RadzenDataGridColumn TItem="TaskAllocation" Title="Month" Width="200px" TextAlign="TextAlign.Center">
+                        </RadzenDataGridColumn>
+                        <RadzenDataGridColumn TItem="TaskAllocation" Title="Action" Width="220px" TextAlign="TextAlign.Center" />
+                    </Columns>
+                </RadzenDataGrid>
+            }
+            else
+            {
+                <RadzenDataGrid Style="width: 900px" AllowFiltering="true" AllowColumnResize="true" AllowAlternatingRows="false" FilterMode="FilterMode.Advanced" AllowSorting="true" PageSize="5" AllowPaging="true" PagerHorizontalAlign="HorizontalAlign.Left" ShowPagingSummary="true"
+                        Data="@taskAllocations.Where(u => u.TaskYearMonth.Month == month)" TItem="TaskAllocation" ColumnWidth="400px" LogicalFilterOperator="LogicalFilterOperator.Or">
+                    <Columns>
+                        <RadzenDataGridColumn TItem="TaskAllocation" Property="TaskYearMonth.Year" Title="Year" Width="200px" TextAlign="TextAlign.Center" />
+                        <RadzenDataGridColumn TItem="TaskAllocation" Title="Month" Width="200px" TextAlign="TextAlign.Center">
+                            <Template Context="myList">
+                                @foreach (var i in monthTable.Where(u => u.monthNumber == myList.TaskYearMonth.Month))
+                                {
+                                    monthName = i.monthName;
+                                }
+                                @monthName
+                            </Template>
+                        </RadzenDataGridColumn>
+                        <RadzenDataGridColumn TItem="TaskAllocation" Title="Status" Width="200px" TextAlign="TextAlign.Center">
+                            <Template Context="taskAllocation">
+                                @foreach (var i in pStatus.Where(u => u.ProjectStatusId == taskAllocation.StatusId))
+                                {
+                                    status = i.ProjectStatusName;
+                                }
+                                @status
+                            </Template>
+                        </RadzenDataGridColumn>
+                        <RadzenDataGridColumn TItem="TaskAllocation" Title="Action" Width="220px" TextAlign="TextAlign.Center">
+                            <Template Context="myList">
+                                <RadzenButton Shade="Shade.Lighter" ButtonStyle="ButtonStyle.Success" Text="View" Size="ButtonSize.Medium" Click="() => navigateToView(myList.TaskYearMonth.Month)" @onclick:stopPropagation="true" Style="width:80px;"> </RadzenButton>
+                            </Template>
+                        </RadzenDataGridColumn>
+                    </Columns>
+                </RadzenDataGrid>
+            }
+
+        }
+        else
+        {
+            <RadzenDataGrid TItem="TaskAllocationDetail" Data="@taskAllocationDetails">
+                <EmptyTemplate>
+                    <p style="color: lightgrey; font-size: 24px; text-align: center; margin: 2rem;">No records to display.</p>
+                </EmptyTemplate>
+                <Columns>
+                    <RadzenDataGridColumn TItem="DME21Model" Property="FirstName" Title="Target Year" TextAlign="TextAlign.Center" />
+                    <RadzenDataGridColumn TItem="DME21Model" Property="LastName" Title="Target Month" TextAlign="TextAlign.Center" />
+                    <RadzenDataGridColumn TItem="DME21Model" Property="Title" Title="Status" TextAlign="TextAlign.Center" />
+                    <RadzenDataGridColumn TItem="DME21Model" Property="TitleOfCourtesy" Title="Action" TextAlign="TextAlign.Center" />
+                </Columns>
+            </RadzenDataGrid>
+        }
+
+    </RadzenCard>
+</div>
+
+@code {
+
+    string[] year = { "2021","2022" };
+    List<Month> monthTable = new List<Month>();
+    private string selectedYear;
+    private int y;
+    private int month;
+    private string monthName;
+    private string status;
+    private bool edit = false;
+    private bool isClicked = false;
+    private int count;
+    string pName;
+
+    List<TaskType> taskTypes = new List<TaskType>();
+    List<ProjectStatus> pStatus = new List<ProjectStatus>();
+    List<TaskAllocationDetail> taskAllocationDetails = new List<TaskAllocationDetail>();
+    TaskAllocationDetail single = new TaskAllocationDetail();
+    TaskAllocationDetail task = new TaskAllocationDetail();
+    List<TaskAllocation> taskAllocations = new List<TaskAllocation>();
+    List<TaskAllocation> myList = new List<TaskAllocation>();
+    List<DME21Model> dme = new List<DME21Model>();
+
+
+
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+
+        monthTable.Add(new Month() { monthName = "January", monthNumber = 1 });
+        monthTable.Add(new Month() { monthName = "February", monthNumber = 2 });
+        monthTable.Add(new Month() { monthName = "March", monthNumber = 3 });
+        monthTable.Add(new Month() { monthName = "April", monthNumber = 4 });
+        monthTable.Add(new Month() { monthName = "May", monthNumber = 5 });
+        monthTable.Add(new Month() { monthName = "June", monthNumber = 6 });
+        monthTable.Add(new Month() { monthName = "July", monthNumber = 7 });
+        monthTable.Add(new Month() { monthName = "August", monthNumber = 8 });
+        monthTable.Add(new Month() { monthName = "September", monthNumber = 9 });
+        monthTable.Add(new Month() { monthName = "October", monthNumber = 10 });
+        monthTable.Add(new Month() { monthName = "November", monthNumber = 11 });
+        monthTable.Add(new Month() { monthName = "December", monthNumber = 12 });
+
+
+        ProjectStatusController projectStatus = ControllerFactory.CreateProjectStatusController();
+        pStatus = projectStatus.GetAllProjectStatus(false);
+
+        TaskTypeController taskTypeController = ControllerFactory.CreateTaskTypeController();
+        taskTypes = taskTypeController.GetAllTaskType(false);
+
+        TaskAllocationDetailController aa = ControllerFactory.CreateTaskAllocationDetailController();
+        taskAllocationDetails = aa.GetAllTaskAllocationDetail(false, false, false);
+
+        TaskAllocationController taskAllocationList = ControllerFactory.CreateTaskAllocationController();
+        taskAllocations = taskAllocationList.GetAllTaskAllocation(true,false,true,true);
+    }
+
+    async Task navigateToView(int index)
+    {
+        NavigationManager.NavigateTo($"/addDme21/edit/{index}");
+    }
+
+    void retrieve(int id)
+    {
+        edit = true;
+        TaskAllocationDetailController details = ControllerFactory.CreateTaskAllocationDetailController();
+        single = details.GetTaskAllocationDetail(id, false, false, false);
+    }
+
+}

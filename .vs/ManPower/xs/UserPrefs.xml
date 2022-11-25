@@ -1,0 +1,42 @@
+﻿<Properties StartupConfiguration="{71C519E4-D4EA-47C0-B432-C3F243A6DFA5}|Default">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.ItemProperties.ManPowerWeb PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="ManPowerWeb/Pages/SelectType.razor">
+    <Files>
+      <File FileName="ManPowerWeb/wwwroot/css/site.css" Line="31" Column="35" />
+      <File FileName="ManPowerWeb/Pages/DME21.razor" Line="445" Column="6" />
+      <File FileName="ManPowerWeb/Pages/AddResourcePerson.razor" Line="136" Column="23" />
+      <File FileName="ManPowerWeb/Pages/VRegistration.razor" Line="96" Column="29" />
+      <File FileName="ManPowerWeb/Pages/SelectType.razor" Line="144" Column="12" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="ManPower" expanded="True">
+            <Node name="ManPowerCore" expanded="True">
+              <Node name="Domain" expanded="True" />
+            </Node>
+            <Node name="ManPowerWeb" expanded="True">
+              <Node name="Pages" expanded="True">
+                <Node name="SelectType.razor" selected="True" />
+              </Node>
+              <Node name="Shared" expanded="True" />
+              <Node name="wwwroot" expanded="True">
+                <Node name="assets" expanded="True" />
+                <Node name="css" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+</Properties>

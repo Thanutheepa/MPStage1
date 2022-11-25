@@ -1,0 +1,107 @@
+﻿using ManPowerCore.Common;
+using ManPowerCore.Domain;
+using ManPowerCore.Infrastructure;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ManPowerCore.Controller
+{
+    public interface SystemUserController
+    {
+        int SaveSystemUser(SystemUser systemUser);
+        int UpdateSystemUser(SystemUser systemUser);
+        List<SystemUser> GetAllSystemUser();
+        SystemUser GetSystemUser(int id);
+    }
+
+    public class SystemUserControllerImpl : SystemUserController
+    {
+        DBConnection dBConnection;
+        SystemUserDAO systemUserDAO = DAOFactory.CreateSystemUserDAO();
+        public int SaveSystemUser(SystemUser systemUser)
+        {
+            try
+            {
+                dBConnection = new DBConnection();
+                return systemUserDAO.SaveSystemUser(systemUser, dBConnection);
+            }
+            catch (Exception)
+            {
+                dBConnection.RollBack();
+
+                throw;
+            }
+            finally
+            {
+                if (dBConnection.con.State == System.Data.ConnectionState.Open)
+                    dBConnection.Commit();
+            }
+        }
+
+        public int UpdateSystemUser(SystemUser systemUser)
+        {
+            try
+            {
+                dBConnection = new DBConnection();
+                var systemUserDetails = systemUserDAO.UpdateSystemUser(systemUser, dBConnection);
+                return systemUserDetails;
+            }
+            catch (Exception)
+            {
+                dBConnection.RollBack();
+
+                throw;
+            }
+            finally
+            {
+                if (dBConnection.con.State == System.Data.ConnectionState.Open)
+                    dBConnection.Commit();
+            }
+        }
+
+        public List<SystemUser> GetAllSystemUser()
+        {
+            try
+            {
+                dBConnection = new DBConnection();
+                List<SystemUser> list = systemUserDAO.GetAllSystemUser(dBConnection);
+                return list;
+
+            }
+            catch (Exception)
+            {
+                dBConnection.RollBack();
+                throw;
+            }
+            finally
+            {
+                if (dBConnection.con.State == System.Data.ConnectionState.Open)
+                    dBConnection.Commit();
+            }
+
+        }
+
+        public SystemUser GetSystemUser(int id)
+        {
+            DBConnection dbConnection = new DBConnection();
+            try
+            {
+                SystemUserDAO DAO = DAOFactory.CreateSystemUserDAO();
+                return DAO.GetSystemUser(id, dbConnection);
+            }
+            catch (Exception ex)
+            {
+                dbConnection.RollBack();
+                throw;
+            }
+            finally
+            {
+                if (dbConnection.con.State == System.Data.ConnectionState.Open)
+                    dbConnection.Commit();
+            }
+        }
+    }
+}

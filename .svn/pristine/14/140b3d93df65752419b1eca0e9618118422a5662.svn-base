@@ -1,0 +1,78 @@
+﻿using ManPowerCore.Common;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ManPowerCore.Domain
+{
+    internal class ProgramPlan
+    {
+
+
+        [DBField("ID")]
+        public int ProgramPlanId { get; set; }
+
+        [DBField("PROJECT_STATUS_ID")]
+        public int ProjectStatusId { get; set; }
+
+        [DBField("PROGRAM_CATEGORY_ID")]
+        public int ProgramCategoryId { get; set; }
+
+        [DBField("PROGRAM_TARGET_ID")]
+        public string ProgramTargetId { get; set; }
+
+
+        [DBField("DATE")]
+        public DateTime Date { get; set; }
+
+        [DBField("LOCATION")]
+        public string Location { get; set; }
+
+        [DBField("OUTCOME")]
+        public string Outcome { get; set; }
+
+        [DBField("OUTPUT")]
+        public string Output { get; set; }
+
+        [DBField("ACTUAL_OUTPUT")]
+        public string ActualOutput { get; set; }
+
+        [DBField("IS_APPROVED")]
+        public int IsApproved { get; set; }
+
+        [DBField("APPROVED_BY")]
+        public string ApprovedBy { get; set; }
+
+        [DBField("APPROVED_DATE")]
+        public DateTime ApprovedDate { get; set; }
+
+        [DBField("TOTAL_ESTIMATED_AMOUNT")]
+        public float TotalEstimatedAmount { get; set; }
+
+        [DBField("APPROVED_AMOUNT")]
+        public float ApprovedAmount { get; set; }
+
+        [DBField("ACTUAL_AMOUNT")]
+        public float ActualAmount { get; set; }
+
+        [DBField("MALE")]
+        public string Male { get; set; }
+
+        [DBField("FEMALE")]
+        public string Female { get; set; }
+
+
+
+        public List<ProgramAttendence> _ProgramAttendence { get; set; }
+        public List<ProgramBudget> _ProgramBudget { get; set; }
+
+
+
+        public ProgramCategory _ProgramCategory { get; set; } = new ProgramCategory();
+        public ProjectStatus _ProjectStatus { get; set; } = new ProjectStatus();
+
+
+    }
+}

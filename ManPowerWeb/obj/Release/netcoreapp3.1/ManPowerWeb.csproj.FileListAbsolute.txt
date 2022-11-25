@@ -1,0 +1,462 @@
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\bin\Release\netcoreapp3.1\appsettings.Development.json
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\bin\Release\netcoreapp3.1\appsettings.json
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\bin\Release\netcoreapp3.1\ManPowerWeb.StaticWebAssets.xml
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\bin\Release\netcoreapp3.1\ManPowerWeb.exe
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\bin\Release\netcoreapp3.1\ManPowerWeb.deps.json
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\bin\Release\netcoreapp3.1\ManPowerWeb.runtimeconfig.json
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\bin\Release\netcoreapp3.1\ManPowerWeb.runtimeconfig.dev.json
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\bin\Release\netcoreapp3.1\ManPowerWeb.dll
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\bin\Release\netcoreapp3.1\ManPowerWeb.pdb
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\bin\Release\netcoreapp3.1\ManPowerWeb.Views.dll
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\bin\Release\netcoreapp3.1\ManPowerWeb.Views.pdb
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\bin\Release\netcoreapp3.1\Blazored.LocalStorage.dll
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\bin\Release\netcoreapp3.1\Blazored.SessionStorage.dll
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\bin\Release\netcoreapp3.1\CurrieTechnologies.Razor.SweetAlert2.dll
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Authorization.dll
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Components.dll
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Components.Forms.dll
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Components.Web.dll
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Metadata.dll
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\bin\Release\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\bin\Release\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\bin\Release\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\bin\Release\netcoreapp3.1\Microsoft.Extensions.Options.dll
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\bin\Release\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\bin\Release\netcoreapp3.1\Microsoft.JSInterop.dll
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\bin\Release\netcoreapp3.1\Radzen.Blazor.dll
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\bin\Release\netcoreapp3.1\System.Data.SqlClient.dll
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\bin\Release\netcoreapp3.1\System.Linq.Dynamic.Core.dll
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\bin\Release\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\bin\Release\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\bin\Release\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\bin\Release\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\bin\Release\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\bin\Release\netcoreapp3.1\ManPowerCore.dll
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\bin\Release\netcoreapp3.1\ManPowerCore.pdb
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\ManPowerWeb.csproj.AssemblyReference.cache
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\ManPowerWeb.GeneratedMSBuildEditorConfig.editorconfig
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\ManPowerWeb.AssemblyInfoInputs.cache
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\ManPowerWeb.AssemblyInfo.cs
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\ManPowerWeb.csproj.CoreCompileInputs.cache
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\ManPowerWeb.MvcApplicationPartsAssemblyInfo.cache
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\ManPowerWeb.RazorComponent.input.cache
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\App.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\AddAppointmentPage.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\AddDepartment.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\AddNewTarget.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\AddResourcePerson.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\AddSpecialProgram.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\AnnualTargetRecommondation.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\AnnualTargets.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\ApprovalView.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\CompletedPrograms.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\CV.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\DME21.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\DME21Approval.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\DME21SearchView.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\DME21_edit.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\DME22.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\DME22SearchView.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\DME22_View.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\DME24.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\DME37.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\DME37Search.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\DME42.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\DME42Seaarch.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\EditAppointmentPage.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\EntrepreneurReg.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\EntrepreneurRegSearch.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\Index.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\Login.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\RecommndationView.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\RegistrationSearch.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\SelectType.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\UpcomingProgramme.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\UpdateTarget.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\UserRegistation.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\ViewCompletedProgram.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\ViewEntrepreneur.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\ViewInduvidualBeneficiary.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\ViewMyTarget.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\ViewUpcomingPrograme.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\VRegistration.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\_UpComingProgrameTable.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Shared\MainLayout.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Shared\NavMenu.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Shared\PublicLayout.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Shared\SurveyPrompt.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\_Imports.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\ManPowerWeb.RazorComponent.output.cache
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\ManPowerWeb.dll
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\ManPowerWeb.TagHelpers.input.cache
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\ManPowerWeb.TagHelpers.output.cache
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\ManPowerWeb.RazorCoreGenerate.cache
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\App.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\AddAppointmentPage.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\AddDepartment.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\AddNewTarget.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\AddResourcePerson.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\AddSpecialProgram.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\AnnualTargetRecommondation.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\AnnualTargets.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\ApprovalView.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\CompletedPrograms.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\CV.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\DME21.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\DME21Approval.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\DME21SearchView.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\DME21_edit.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\DME22.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\DME22SearchView.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\DME22_View.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\DME24.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\DME37.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\DME37Search.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\DME42.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\DME42Seaarch.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\EditAppointmentPage.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\EntrepreneurReg.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\EntrepreneurRegSearch.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\Index.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\Login.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\RecommndationView.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\RegistrationSearch.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\SelectType.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\UpcomingProgramme.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\UpdateTarget.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\UserRegistation.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\ViewCompletedProgram.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\ViewEntrepreneur.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\ViewInduvidualBeneficiary.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\ViewMyTarget.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\ViewUpcomingPrograme.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\VRegistration.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\_UpComingProgrameTable.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Shared\MainLayout.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Shared\NavMenu.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Shared\PublicLayout.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Shared\SurveyPrompt.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\_Imports.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\Error.cshtml.g.cs
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\_Host.cshtml.g.cs
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\ManPowerWeb.RazorAssemblyInfo.cache
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\ManPowerWeb.RazorAssemblyInfo.cs
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\staticwebassets\ManPowerWeb.StaticWebAssets.Manifest.cache
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\staticwebassets\ManPowerWeb.StaticWebAssets.xml
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\ManPowerWeb.RazorTargetAssemblyInfo.cache
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\ManPowerWeb.RazorTargetAssemblyInfo.cs
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\ManPowerWeb.Views.pdb
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\ManPowerWeb.csproj.CopyComplete
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\ManPowerWeb.dll
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\ManPowerWeb.pdb
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\ManPowerWeb.genruntimeconfig.cache
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\bin\Release\netcoreapp3.1\appsettings.Development.json
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\bin\Release\netcoreapp3.1\appsettings.json
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\bin\Release\netcoreapp3.1\ManPowerWeb.StaticWebAssets.xml
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\bin\Release\netcoreapp3.1\ManPowerWeb.exe
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\bin\Release\netcoreapp3.1\ManPowerWeb.deps.json
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\bin\Release\netcoreapp3.1\ManPowerWeb.runtimeconfig.json
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\bin\Release\netcoreapp3.1\ManPowerWeb.runtimeconfig.dev.json
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\bin\Release\netcoreapp3.1\ManPowerWeb.dll
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\bin\Release\netcoreapp3.1\ManPowerWeb.pdb
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\bin\Release\netcoreapp3.1\ManPowerWeb.Views.dll
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\bin\Release\netcoreapp3.1\ManPowerWeb.Views.pdb
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\bin\Release\netcoreapp3.1\Blazored.LocalStorage.dll
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\bin\Release\netcoreapp3.1\Blazored.SessionStorage.dll
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\bin\Release\netcoreapp3.1\CurrieTechnologies.Razor.SweetAlert2.dll
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Authorization.dll
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Components.dll
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Components.Forms.dll
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Components.Web.dll
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Metadata.dll
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\bin\Release\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\bin\Release\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\bin\Release\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\bin\Release\netcoreapp3.1\Microsoft.Extensions.Options.dll
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\bin\Release\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\bin\Release\netcoreapp3.1\Microsoft.JSInterop.dll
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\bin\Release\netcoreapp3.1\Radzen.Blazor.dll
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\bin\Release\netcoreapp3.1\System.Data.SqlClient.dll
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\bin\Release\netcoreapp3.1\System.Linq.Dynamic.Core.dll
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\bin\Release\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\bin\Release\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\bin\Release\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\bin\Release\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\bin\Release\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\bin\Release\netcoreapp3.1\ManPowerCore.dll
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\bin\Release\netcoreapp3.1\ManPowerCore.pdb
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\ManPowerWeb.csproj.AssemblyReference.cache
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\ManPowerWeb.GeneratedMSBuildEditorConfig.editorconfig
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\ManPowerWeb.AssemblyInfoInputs.cache
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\ManPowerWeb.AssemblyInfo.cs
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\ManPowerWeb.csproj.CoreCompileInputs.cache
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\ManPowerWeb.MvcApplicationPartsAssemblyInfo.cache
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\ManPowerWeb.RazorComponent.input.cache
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\App.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\AddAppointmentPage.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\AddDepartment.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\AddNewTarget.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\AddResourcePerson.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\AddSpecialProgram.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\AnnualTargetRecommondation.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\AnnualTargets.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\ApprovalView.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\CompletedPrograms.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\CV.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\DME21.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\DME21Approval.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\DME21SearchView.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\DME21_edit.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\DME22.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\DME22SearchView.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\DME22_View.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\DME24.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\DME37.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\DME37Search.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\DME42.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\DME42Seaarch.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\EditAppointmentPage.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\EntrepreneurReg.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\EntrepreneurRegSearch.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\Index.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\Login.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\RecommndationView.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\RegistrationSearch.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\SelectType.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\UpcomingProgramme.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\UpdateTarget.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\UserRegistation.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\ViewCompletedProgram.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\ViewEntrepreneur.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\ViewInduvidualBeneficiary.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\ViewMyTarget.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\ViewUpcomingPrograme.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\VRegistration.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\_UpComingProgrameTable.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Shared\MainLayout.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Shared\NavMenu.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Shared\PublicLayout.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Shared\SurveyPrompt.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\_Imports.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\ManPowerWeb.RazorComponent.output.cache
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\ManPowerWeb.dll
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\ManPowerWeb.TagHelpers.input.cache
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\ManPowerWeb.TagHelpers.output.cache
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\ManPowerWeb.RazorCoreGenerate.cache
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\App.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\AddAppointmentPage.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\AddDepartment.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\AddNewTarget.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\AddResourcePerson.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\AddSpecialProgram.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\AnnualTargetRecommondation.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\AnnualTargets.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\ApprovalView.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\CompletedPrograms.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\CV.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\DME21.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\DME21Approval.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\DME21SearchView.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\DME21_edit.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\DME22.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\DME22SearchView.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\DME22_View.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\DME24.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\DME37.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\DME37Search.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\DME42.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\DME42Seaarch.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\EditAppointmentPage.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\EntrepreneurReg.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\EntrepreneurRegSearch.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\Index.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\Login.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\RecommndationView.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\RegistrationSearch.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\SelectType.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\UpcomingProgramme.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\UpdateTarget.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\UserRegistation.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\ViewCompletedProgram.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\ViewEntrepreneur.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\ViewInduvidualBeneficiary.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\ViewMyTarget.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\ViewUpcomingPrograme.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\VRegistration.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\_UpComingProgrameTable.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Shared\MainLayout.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Shared\NavMenu.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Shared\PublicLayout.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Shared\SurveyPrompt.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\_Imports.razor.g.cs
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\Error.cshtml.g.cs
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\_Host.cshtml.g.cs
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\ManPowerWeb.RazorAssemblyInfo.cache
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\ManPowerWeb.RazorAssemblyInfo.cs
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\staticwebassets\ManPowerWeb.StaticWebAssets.Manifest.cache
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\staticwebassets\ManPowerWeb.StaticWebAssets.xml
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\ManPowerWeb.RazorTargetAssemblyInfo.cache
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\ManPowerWeb.RazorTargetAssemblyInfo.cs
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\ManPowerWeb.Views.pdb
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\ManPowerWeb.csproj.CopyComplete
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\ManPowerWeb.dll
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\ManPowerWeb.pdb
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerWeb\obj\Release\netcoreapp3.1\ManPowerWeb.genruntimeconfig.cache
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\bin\Release\netcoreapp3.1\appsettings.Development.json
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\bin\Release\netcoreapp3.1\appsettings.json
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\bin\Release\netcoreapp3.1\ManPowerWeb.StaticWebAssets.xml
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\bin\Release\netcoreapp3.1\ManPowerWeb.exe
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\bin\Release\netcoreapp3.1\ManPowerWeb.deps.json
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\bin\Release\netcoreapp3.1\ManPowerWeb.runtimeconfig.json
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\bin\Release\netcoreapp3.1\ManPowerWeb.runtimeconfig.dev.json
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\bin\Release\netcoreapp3.1\ManPowerWeb.dll
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\bin\Release\netcoreapp3.1\ManPowerWeb.pdb
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\bin\Release\netcoreapp3.1\ManPowerWeb.Views.dll
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\bin\Release\netcoreapp3.1\ManPowerWeb.Views.pdb
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\bin\Release\netcoreapp3.1\Blazored.LocalStorage.dll
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\bin\Release\netcoreapp3.1\Blazored.SessionStorage.dll
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\bin\Release\netcoreapp3.1\CurrieTechnologies.Razor.SweetAlert2.dll
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Authorization.dll
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Components.dll
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Components.Forms.dll
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Components.Web.dll
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\bin\Release\netcoreapp3.1\Microsoft.AspNetCore.Metadata.dll
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\bin\Release\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\bin\Release\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\bin\Release\netcoreapp3.1\Microsoft.Extensions.Logging.Abstractions.dll
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\bin\Release\netcoreapp3.1\Microsoft.Extensions.Options.dll
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\bin\Release\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\bin\Release\netcoreapp3.1\Microsoft.JSInterop.dll
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\bin\Release\netcoreapp3.1\Radzen.Blazor.dll
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\bin\Release\netcoreapp3.1\System.Data.SqlClient.dll
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\bin\Release\netcoreapp3.1\System.Linq.Dynamic.Core.dll
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\bin\Release\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\bin\Release\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\bin\Release\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\bin\Release\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\bin\Release\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\bin\Release\netcoreapp3.1\ManPowerCore.dll
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\bin\Release\netcoreapp3.1\ManPowerCore.pdb
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\ManPowerWeb.csproj.AssemblyReference.cache
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\ManPowerWeb.GeneratedMSBuildEditorConfig.editorconfig
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\ManPowerWeb.AssemblyInfoInputs.cache
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\ManPowerWeb.AssemblyInfo.cs
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\ManPowerWeb.csproj.CoreCompileInputs.cache
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\ManPowerWeb.MvcApplicationPartsAssemblyInfo.cache
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\ManPowerWeb.RazorComponent.input.cache
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\App.razor.g.cs
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\AddAppointmentPage.razor.g.cs
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\AddDepartment.razor.g.cs
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\AddNewTarget.razor.g.cs
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\AddPosition.razor.g.cs
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\AddResourcePerson.razor.g.cs
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\AddSpecialProgram.razor.g.cs
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\AnnualTargetRecommondation.razor.g.cs
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\AnnualTargets.razor.g.cs
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\ApprovalView.razor.g.cs
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\CompletedPrograms.razor.g.cs
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\DME21.razor.g.cs
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\DME21Approval.razor.g.cs
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\DME21SearchView.razor.g.cs
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\DME21_edit.razor.g.cs
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\DME22.razor.g.cs
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\DME22SearchView.razor.g.cs
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\DME22_View.razor.g.cs
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\DME24.razor.g.cs
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\DME37.razor.g.cs
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\DME37Search.razor.g.cs
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\DME42.razor.g.cs
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\DME42Seaarch.razor.g.cs
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\EditAppointmentPage.razor.g.cs
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\EntrepreneurReg.razor.g.cs
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\EntrepreneurRegSearch.razor.g.cs
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\Index.razor.g.cs
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\Login.razor.g.cs
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\RecommndationView.razor.g.cs
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\RegistrationSearch.razor.g.cs
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\Scheduler.razor.g.cs
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\SelectType.razor.g.cs
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\UpcomingProgramme.razor.g.cs
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\UpdateTarget.razor.g.cs
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\UserRegistation.razor.g.cs
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\ViewCompletedProgram.razor.g.cs
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\ViewEntrepreneur.razor.g.cs
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\ViewInduvidualBeneficiary.razor.g.cs
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\ViewMyTarget.razor.g.cs
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\ViewUpcomingPrograme.razor.g.cs
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\VRegistration.razor.g.cs
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\_UpComingProgrameTable.razor.g.cs
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Shared\MainLayout.razor.g.cs
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Shared\NavMenu.razor.g.cs
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Shared\PublicLayout.razor.g.cs
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Shared\SurveyPrompt.razor.g.cs
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\_Imports.razor.g.cs
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\ManPowerWeb.RazorComponent.output.cache
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\ManPowerWeb.dll
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\ManPowerWeb.TagHelpers.input.cache
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\ManPowerWeb.TagHelpers.output.cache
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\ManPowerWeb.RazorCoreGenerate.cache
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\App.razor.g.cs
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\AddAppointmentPage.razor.g.cs
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\AddDepartment.razor.g.cs
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\AddNewTarget.razor.g.cs
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\AddPosition.razor.g.cs
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\AddResourcePerson.razor.g.cs
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\AddSpecialProgram.razor.g.cs
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\AnnualTargetRecommondation.razor.g.cs
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\AnnualTargets.razor.g.cs
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\ApprovalView.razor.g.cs
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\CompletedPrograms.razor.g.cs
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\DME21.razor.g.cs
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\DME21Approval.razor.g.cs
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\DME21SearchView.razor.g.cs
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\DME21_edit.razor.g.cs
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\DME22.razor.g.cs
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\DME22SearchView.razor.g.cs
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\DME22_View.razor.g.cs
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\DME24.razor.g.cs
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\DME37.razor.g.cs
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\DME37Search.razor.g.cs
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\DME42.razor.g.cs
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\DME42Seaarch.razor.g.cs
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\EditAppointmentPage.razor.g.cs
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\EntrepreneurReg.razor.g.cs
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\EntrepreneurRegSearch.razor.g.cs
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\Index.razor.g.cs
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\Login.razor.g.cs
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\RecommndationView.razor.g.cs
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\RegistrationSearch.razor.g.cs
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\Scheduler.razor.g.cs
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\SelectType.razor.g.cs
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\UpcomingProgramme.razor.g.cs
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\UpdateTarget.razor.g.cs
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\UserRegistation.razor.g.cs
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\ViewCompletedProgram.razor.g.cs
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\ViewEntrepreneur.razor.g.cs
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\ViewInduvidualBeneficiary.razor.g.cs
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\ViewMyTarget.razor.g.cs
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\ViewUpcomingPrograme.razor.g.cs
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\VRegistration.razor.g.cs
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\_UpComingProgrameTable.razor.g.cs
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Shared\MainLayout.razor.g.cs
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Shared\NavMenu.razor.g.cs
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Shared\PublicLayout.razor.g.cs
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Shared\SurveyPrompt.razor.g.cs
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\_Imports.razor.g.cs
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\Error.cshtml.g.cs
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\_Host.cshtml.g.cs
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\ManPowerWeb.RazorAssemblyInfo.cache
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\ManPowerWeb.RazorAssemblyInfo.cs
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\staticwebassets\ManPowerWeb.StaticWebAssets.Manifest.cache
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\staticwebassets\ManPowerWeb.StaticWebAssets.xml
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\ManPowerWeb.RazorTargetAssemblyInfo.cache
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\ManPowerWeb.RazorTargetAssemblyInfo.cs
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\ManPowerWeb.Views.pdb
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\ManPowerWeb.csproj.CopyComplete
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\ManPowerWeb.dll
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\ManPowerWeb.pdb
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\ManPowerWeb.genruntimeconfig.cache
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\DME21Update.razor.g.cs
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\DME21Update.razor.g.cs
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\RazorDeclaration\Pages\DME22Approval.razor.g.cs
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerWeb\obj\Release\netcoreapp3.1\Razor\Pages\DME22Approval.razor.g.cs

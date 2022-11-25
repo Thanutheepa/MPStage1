@@ -1,0 +1,83 @@
+﻿
+
+@page "/AddPosition"
+
+
+
+<div id="main">
+    <br />
+<br />
+<br />
+    <RadzenTemplateForm TItem="Model"  Data=@model Submit=@OnSubmit InvalidSubmit=@OnInvalidSubmit>
+        <RadzenCard Style="padding-left:45px;">
+            <div class="wizard-heading">Add Position</div> <br /><br />
+                <div class="row">
+                    <div class="col-6">
+
+
+                    <div class="row">
+                        <div class="col-4">
+                            <RadzenLabel Text="Position" />
+                        </div>
+                        <div class="col-7">
+                            <RadzenTextBox Placeholder="" Style="margin-bottom:10px; display: block" Class="w-100" @bind-Value="model.position" Popup=@popup Name="Position"></RadzenTextBox>
+                            <RadzenRequiredValidator Component="Position" Text="Position is required" Style="position: absolute" />
+                        </div>
+                    </div>
+                    <br />
+
+                    </div>
+                        </div>
+
+            <br /><br />
+            <div style="margin-left:650px">
+                <RadzenButton Text="Submit" ButtonStyle="ButtonStyle.Secondary" Style="margin-left:10px" ButtonType="ButtonType.Submit" />
+                <RadzenButton Text="Clear" Shade="Shade.Lighter" ButtonStyle="ButtonStyle.Secondary" Style="margin-left:70px" Click=@Clear />
+            </div>
+
+            <br /><br />
+
+         </RadzenCard>
+    </RadzenTemplateForm>
+    </div>
+
+@code {
+
+
+
+    class Model
+    {
+
+        public string position { get; set; } = "";
+
+    }
+
+    Model model = new Model();
+    bool popup;
+
+    protected override void OnInitialized()
+    {
+        
+
+    }
+
+
+
+    void OnSubmit()
+    {
+
+    }
+
+    private void Clear()
+    {
+
+      
+    }
+
+
+    void OnInvalidSubmit(FormInvalidSubmitEventArgs args)
+    {
+
+    }
+
+}

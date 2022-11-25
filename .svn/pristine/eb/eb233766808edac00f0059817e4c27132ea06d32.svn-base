@@ -1,0 +1,242 @@
+﻿@page "/planning/1/addnewtarget"
+@inject IJSRuntime JS
+@using System.Text.RegularExpressions
+
+
+<div id="main">
+    <div class="primary-container">
+        <div class="wizard-heading">Allocate Targets</div>
+         @*<RadzenFieldset>*@
+            <div class="row">
+                <div class="col-5" style="margin-right:100px;">
+                <RadzenDropDown AllowClear="true" TValue="string" Class="w-100" Placeholder="Year.." Data="@year" Name="year"
+                                SelectedItem="selectedYear" @bind-Value="selectedYear" Style="margin-bottom:10px;"></RadzenDropDown>
+                <RadzenRequiredValidator Component="year" Text="Year is required"  Style="position: absolute" />
+
+                <RadzenDropDown AllowClear="true" TValue="string" Class="w-100" Placeholder="District.."
+                                Data="@district" @bind-Value="selectedDistrict" Style="margin-bottom:10px;"></RadzenDropDown>
+
+                <RadzenDropDown AllowClear="true" TValue="string" Class="w-100" Data="@officerName"
+                                SelectedItem="selectedOfficerName" @bind-Value="selectedOfficerName" Placeholder="Officer Name.." /><br />
+
+            </div>
+
+            <div class="col-5">
+
+                <RadzenDropDown AllowClear="true" TValue="string" Class="w-100" Placeholder="DS Devision.." Data="@dsDevision"
+                                SelectedItem="selectedDSDivision" @bind-Value="selectedDSDivision" Style="margin-bottom:10px;" />
+
+                <RadzenDropDown AllowClear="true" TValue="string" Class="w-100" Placeholder="Designation.." Data="@designation"
+                                SelectedItem="selectedDesignatin" @bind-Value="selectedDesignatin" Style="margin-bottom:10px;" />
+
+            </div>
+        </div>
+        @*</RadzenFieldset>*@
+
+        <br/><br/>
+
+        @*<RadzenFieldset>*@
+
+        <div class="row">
+            <div class="col-5" style="margin-right:100px;">
+                <RadzenDropDown AllowClear="true" TValue="string" Class="w-100" Placeholder="Target Category.." Data="@targetType"
+                                SelectedItem="selectedDSDivision" @bind-Value="selectedDSDivision" Style="margin-bottom:10px;" />
+
+                <RadzenDropDown AllowClear="true" TValue="string" Class="w-100" Placeholder="Program Instructions.." Data="@prgramIntr"
+                                SelectedItem="selectedDSDivision" @bind-Value="selectedDSDivision" Style="margin-bottom:10px;" />
+            </div>
+
+
+            <div class="col-5">
+                <RadzenDropDown AllowClear="true" TValue="string" Class="w-100" Placeholder="Program.." Data="@targetType"
+                                SelectedItem="selectedDSDivision" @bind-Value="selectedDSDivision" Style="margin-bottom:10px;" />
+
+                <RadzenDropDown AllowClear="true" TValue="string" Class="w-100" Placeholder="Vote.." Data="@prgramIntr"
+                                SelectedItem="selectedDSDivision" @bind-Value="selectedDSDivision" Style="margin-bottom:10px;" />
+            </div>
+
+        </div>
+        @*</RadzenFieldset>*@
+
+        <br /><br />
+
+        <RadzenFieldset>
+        <div class="row"> 
+            <div class="col-7">
+                <h5>Quater target: physical / financial : </h5><br />
+
+                <RadzenDropDown AllowClear="true" TValue="string" Class="w-100" Placeholder="Program.." Data="@targetType"
+                                SelectedItem="selectedDSDivision" @bind-Value="selectedDSDivision" Style="margin-bottom:10px;" />
+
+                <div class="row">
+                    <div class="col-4">
+                        <RadzenLabel Text="Physical Count"></RadzenLabel><br/><br/>
+                        <RadzenLabel Text="Financial Count"></RadzenLabel>
+                    </div>
+                     <div class="col">
+                        <RadzenTextBox Placeholder="Ex: 10" @bind-Value="phyCount" Style="margin-bottom:10px;"></RadzenTextBox>
+                        <RadzenTextBox Placeholder="Ex: 100000" @bind-Value="finCount" Style="margin-bottom:10px;"></RadzenTextBox>
+                    </div>
+                </div>
+                
+                <br />
+                    <input type="button" class="primary-btn" value="Add" @onclick="onClick_add" />
+            </div> 
+        </div>
+        </RadzenFieldset>
+
+        <br /><br />
+
+
+        <RadzenFieldset>
+        <div class="row">
+            <div class="col-5">
+                <h5>Expected results : </h5><br />
+
+                <RadzenDropDown AllowClear="true" TValue="string" Class="w-100" Placeholder="Output.." Data="@targetType"
+                                SelectedItem="selectedDSDivision" @bind-Value="output" Style="margin-bottom:10px;" />
+
+                <RadzenDropDown AllowClear="true" TValue="string" Class="w-100" Placeholder="Outcome.." Data="@targetType"
+                                SelectedItem="selectedDSDivision" @bind-Value="outcome" Style="margin-bottom:10px;" />
+            </div>
+        </div>
+        </RadzenFieldset>
+        <br /><br /><br />
+
+        <div class="row">
+            <div class="col-5">
+
+                <div class="form-holder form-holder-2">
+                    <a href="/planning/1/addnewtarget">
+                        <input type="button" class="primary-btn" value="Save" @onclick="onClick_save" />
+                    </a>
+                </div>
+                <br />
+
+                <div class="form-holder form-holder-2">
+                    <a href="/planning/1">
+                        <input type="button" class="primary-btn" value="Save & Submit to HQ" style="width:250px;" />
+                    </a>
+                </div>
+                <br />
+
+                <div class="form-holder form-holder-2">
+                    <input type="button" class="primary-btn" value="Clear" @onclick="onClick_clear" />
+                </div>
+                <br />
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@code{
+
+    string[] year = { "2019", "2020", "2021", "2022" };
+    string[] district = { "Gampaha", "Kaluthara", "Galle", "Colombo" };
+    string[] dsDevision = { "DS Division 01", "DS Division 02", "DS Division 03", "DS Division 04" };
+    string[] designation = { "Executive", "Secretary" };
+    string[] officerName = { "Mr. R Fernando", "Mrs. A Abhesinghe", "Mr. S T Perera" };
+    string[] targetType = { "Common", "Specific"};
+    string[] prgramIntr = { "Gampaha", "Kaluthara", "Galle", "Colombo" };
+
+
+    private string selectedOfficerName;
+    private string selectedYear;
+    private string selectedDSDivision;
+    private string selectedDistrict;
+    private string selectedDesignatin;
+
+    private string targetCategory;
+    private string program;
+    private string pInstruct;
+    private string vote;
+    private string qtr;
+    private string phyCount;
+    private string finCount;
+    private string output;
+    private string outcome;
+
+
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+    }
+
+    private async void onClick_save()
+    {
+        if (selectedOfficerName == string.Empty || selectedOfficerName == null ||
+            selectedDSDivision == string.Empty || selectedDSDivision == null ||
+            selectedDistrict == string.Empty || selectedDistrict == null ||
+            selectedDesignatin == string.Empty || selectedDesignatin == null ||
+            selectedYear == string.Empty || selectedYear == null ||
+            targetCategory == string.Empty || targetCategory == null ||
+            program == string.Empty || program == null ||
+            pInstruct == string.Empty || pInstruct == null ||
+            vote == string.Empty || vote == null ||
+            qtr == string.Empty || qtr == null ||
+            phyCount == string.Empty || phyCount == null ||
+            finCount == string.Empty || finCount == null ||
+            output == string.Empty || output == null ||
+            outcome == string.Empty || outcome == null)
+        {
+            await JS.InvokeAsync<object>("ErrorAlert", "error", "", "Please fill all the required data");
+        }
+        else
+        {
+            await JS.InvokeAsync<object>("ErrorAlert", "success", "", "validate success");
+        }
+    }
+
+    private async void onClick_add()
+    {
+        if (qtr == string.Empty || qtr == null ||
+            phyCount == string.Empty || phyCount == null ||
+            finCount == string.Empty || finCount == null)
+        {
+            await JS.InvokeAsync<object>("ErrorAlert", "error", "", "Please fill all the required data");
+        }
+        else if (CountValidate(phyCount, finCount) == false)
+        {
+            await JS.InvokeAsync<object>("ErrorAlert", "error", "", "Please add valid counts for 'Physical and Financial Counts'..");
+        }
+        else
+        {
+            await JS.InvokeAsync<object>("ErrorAlert", "success", "", "successfully added");
+        }
+    }
+
+
+
+    private bool CountValidate(string phyCount, string finCount)
+    {
+        Regex count= new Regex("[0-9]");
+        if(count.IsMatch(phyCount) && count.IsMatch(finCount))
+        {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+
+    private void onClick_clear()
+    {
+        selectedOfficerName = "";
+        selectedYear = "";
+        selectedDSDivision = "";
+        selectedDistrict = "";
+        selectedDesignatin = "";
+        targetCategory = "";
+        program = "";
+        pInstruct = "";
+        vote = "";
+        qtr = "";
+        phyCount = "";
+        finCount = "";
+        output = "";
+        outcome = "";
+    }
+}
+

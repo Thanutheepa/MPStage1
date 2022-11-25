@@ -1,0 +1,119 @@
+﻿using ManPowerCore.Common;
+using ManPowerCore.Domain;
+using ManPowerCore.Infrastructure;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ManPowerCore.Controller
+{
+    public interface ProgramController
+    {
+
+        int SaveProgram(Program program);
+
+        int UpdateProgram(Program program);
+
+        List<Program> GetAllProgram();
+
+        Program GetProgram(int id);
+    }
+
+    public class ProgramControllerImpl : ProgramController
+    {
+
+        DBConnection dBConnection;
+        ProgramDAO programDAO = DAOFactory.CreateProgramDAO();
+
+
+        public int SaveProgram(Program program)
+        {
+
+            try
+            {
+                dBConnection = new DBConnection();
+                return programDAO.SaveProgram(program, dBConnection);
+            }
+            catch (Exception)
+            {
+                dBConnection.RollBack();
+
+                throw;
+            }
+            finally
+            {
+                if (dBConnection.con.State == System.Data.ConnectionState.Open)
+                    dBConnection.Commit();
+            }
+        }
+
+        public int UpdateProgram(Program program)
+        {
+
+
+            try
+            {
+                dBConnection = new DBConnection();
+                var programs = programDAO.UpdateProgram(program, dBConnection);
+                return programs;
+            }
+            catch (Exception)
+            {
+                dBConnection.RollBack();
+
+                throw;
+            }
+            finally
+            {
+                if (dBConnection.con.State == System.Data.ConnectionState.Open)
+                    dBConnection.Commit();
+            }
+        }
+
+
+        public List<Program> GetAllProgram()
+        {
+            try
+            {
+                dBConnection = new DBConnection();
+                List<Program> list = programDAO.GetAllProgram(dBConnection);
+                return list;
+
+            }
+            catch (Exception)
+            {
+                dBConnection.RollBack();
+                throw;
+            }
+            finally
+            {
+                if (dBConnection.con.State == System.Data.ConnectionState.Open)
+                    dBConnection.Commit();
+            }
+
+        }
+
+        public Program GetProgram(int id)
+        {
+            DBConnection dbConnection = new DBConnection();
+            try
+            {
+                ProgramDAO DAO = DAOFactory.CreateProgramDAO();
+                return DAO.GetProgram(id, dbConnection);
+            }
+            catch (Exception ex)
+            {
+                dbConnection.RollBack();
+                throw;
+            }
+            finally
+            {
+                if (dbConnection.con.State == System.Data.ConnectionState.Open)
+                    dbConnection.Commit();
+            }
+        }
+
+    }
+}

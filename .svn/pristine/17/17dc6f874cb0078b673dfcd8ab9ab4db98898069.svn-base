@@ -1,0 +1,53 @@
+﻿<!-- ======= Mobile nav toggle button ======= -->
+@*<i class="bi bi-list mobile-nav-toggle d-xl-none"></i>*@
+
+<!-- ======= Header ======= -->
+<header id="header">
+    <div class="d-flex flex-column">
+        <nav id="navbar" class="nav-menu navbar">
+            <ul>
+                <li><a href="#planning" class="nav-link scrollto" @onclick="() => expandSubMenu = !expandSubMenu">Planning<i class="bx bx-down-arrow-alt"></i></a></li>
+                @if (expandSubMenu)
+                {
+                    <ul style="margin-left:20px">
+                        <li><a href="/planning/annualTargets" class="nav-link scrollto"> <span>Anuual Target Allocation</span></a></li>
+                        <li><a href="/planning/myAnnualTargets" class="nav-link scrollto"><span>My Annual Targets</span></a></li>
+                        <li><a href="/planning/upcommingPrograms" class="nav-link scrollto"><span>Upcoming Programs</span></a></li>
+                        <li><a href="#contact" class="nav-link scrollto"><span>Completed programs</span></a></li>
+                        <li><a href="/scheduler" class="nav-link scrollto"><span>Program calender</span></a></li>
+                        <li><a href="#contact" class="nav-link scrollto"><span>Reports</span></a></li>
+                    </ul>
+                }
+                @*<li><a href="#hero" class="nav-link scrollto"><span>Home</span></a></li>
+                <li><a href="#about" class="nav-link scrollto"><span>About</span></a></li>
+                <li><a href="#services" class="nav-link scrollto"><span>Services</span></a></li>
+                <li><a href="#contact" class="nav-link scrollto" @onclick="() => expandSubMenu = !expandSubMenu">Contact<i class="bx bx-down-arrow-alt"></i></a></li>
+
+                @if (expandSubMenu)
+                {
+                <ul style="margin-left:40px">
+                <li><a href="#portfolio" class="nav-link scrollto"> <span>Portfolio</span></a></li>
+                <li><a href="#services" class="nav-link scrollto"><span>Services</span></a></li>
+                <li><a href="#contact" class="nav-link scrollto"><span>Contact</span></a></li>
+                </ul>
+                }
+
+
+                <li><a href="#resume" class="nav-link scrollto"><span>Resume</span></a></li>
+                <li><a href="#portfolio" class="nav-link scrollto"><span>Portfolio</span></a></li>*@
+            </ul>
+        </nav><!-- .nav-menu -->
+    </div>
+</header><!-- End Header -->
+@code {
+    private bool collapseNavMenu = true;
+    private bool expandSubMenu;
+
+    private string? NavMenuCssClass => collapseNavMenu ? "collapse" : null;
+
+    private void ToggleNavMenu()
+    {
+        collapseNavMenu = !collapseNavMenu;
+    }
+}
+

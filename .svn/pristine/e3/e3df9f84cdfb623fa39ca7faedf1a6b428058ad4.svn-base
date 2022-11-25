@@ -1,0 +1,65 @@
+﻿using ManPowerCore.Common;
+using ManPowerCore.Domain;
+using ManPowerCore.Infrastructure;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ManPowerCore.Controller
+{
+    public interface PossitionsController
+    {
+        List<Possitions> GetAllPossitions();
+        Possitions GetPossitions(int id);
+    }
+
+    public class PossitionsControllerImpl : PossitionsController
+    {
+        DBConnection dBConnection;
+        PossitionsDAO possitionsDAO = DAOFactory.CreatePossitionsDAO();
+
+        public List<Possitions> GetAllPossitions()
+        {
+            try
+            {
+                dBConnection = new DBConnection();
+                List<Possitions> list = possitionsDAO.GetAllPossitions(dBConnection);
+                return list;
+
+            }
+            catch (Exception)
+            {
+                dBConnection.RollBack();
+                throw;
+            }
+            finally
+            {
+                if (dBConnection.con.State == System.Data.ConnectionState.Open)
+                    dBConnection.Commit();
+            }
+
+        }
+
+        public Possitions GetPossitions(int id)
+        {
+            DBConnection dbConnection = new DBConnection();
+            try
+            {
+                PossitionsDAO DAO = DAOFactory.CreatePossitionsDAO();
+                return DAO.GetPossitions(id, dbConnection);
+            }
+            catch (Exception ex)
+            {
+                dbConnection.RollBack();
+                throw;
+            }
+            finally
+            {
+                if (dbConnection.con.State == System.Data.ConnectionState.Open)
+                    dbConnection.Commit();
+            }
+        }
+    }
+}

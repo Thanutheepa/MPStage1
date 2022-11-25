@@ -1,0 +1,267 @@
+@page "/planning/annualTargets"
+@inject IJSRuntime JSRuntime
+
+
+<div id="main">
+        <div class="primary-container">
+            <div class="wizard-heading">Annual Targets</div>
+            <RadzenFieldset>
+                <div class="row">
+                    <div class="col-5" style="margin-right:100px;">
+                        <RadzenDropDown AllowClear="true" TValue="string" Class="w-100" Placeholder="Year.." Data="@year" Name="year"
+                                    SelectedItem="selectedYear" @bind-Value="selectedYear" Style="margin-bottom:10px;"></RadzenDropDown>
+                        <RadzenRequiredValidator Component="year" Text="Year is required"  Style="position: absolute" />
+                    </div>
+
+                    <div class="col-5">
+
+                    <RadzenDropDown AllowClear="true" TValue="string" Class="w-100" Placeholder="DS Devision.." Data="@dsDevision"
+                                    SelectedItem="selectedDSDivision" @bind-Value="selectedDSDivision" Style="margin-bottom:10px;" />
+                    </div>
+                </div>
+
+            <div class="row">
+                <div class="col-5" style="margin-right:100px;">
+                    <RadzenDropDown AllowClear="true" TValue="string" Class="w-100" Placeholder="District.."
+                                    Data="@district" @bind-Value="selectedDistrict" Style="margin-bottom:10px;"></RadzenDropDown>
+                </div>
+
+                <div class="col-5">
+
+                    <RadzenDropDown AllowClear="true" TValue="string" Class="w-100" Placeholder="Designation.." Data="@designation"
+                                    SelectedItem="selectedDesignatin" @bind-Value="selectedDesignatin" Style="margin-bottom:10px;" />
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-5" style="margin-right:100px;">
+                    <RadzenDropDown AllowClear="true" TValue="string" Class="w-100" Data="@officerName"
+                                    SelectedItem="selectedOfficerName" @bind-Value="selectedOfficerName" Placeholder="Officer Name.." /><br />
+                </div>
+            </div>
+            <br/>
+
+            <div class="row">
+                <div class="col-5" style="margin-right:100px;">
+                     <input type="button" class="primary-btn" value="Search" @onclick="onClick_Search" />
+                </div>
+            </div>
+
+            </RadzenFieldset>
+
+            <br/><br/>
+
+            <a href="/planning/1/addnewtarget">
+                    <input type="button" class="primary-btn" value="Add new target" style="width:200px;margin-right:40px;" />
+            </a>
+
+            <br /><br/>
+
+            <table class="table primary-table">
+                <thead class="table-active">
+                    <tr>
+                        <th scope="col" style="width:60px;align-items:center;"></th>
+                        <th scope="col" style="width:100px;">Year</th>
+                        <th scope="col" style="width:100px;">District</th>
+                        <th scope="col" style="width:200px;">Office Name</th>
+                        <th scope="col" style="width:150px;">Designation</th>
+                        <th scope="col" style="width:200px;">Target category</th>
+                        <th scope="col" style="width:100px;">Output</th>
+                        <th scope="col" style="width:100px;">Outcome</th>
+                        <th scope="col" style="width:100px;">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">
+                            <label class="my-radio">
+                                <input type="radio" id="1" name="" checked>
+                            </label>
+                        </th>
+                        <td>2022</td>
+                        <td>Colombo</td>
+                        <td>Amal Perera</td>
+                        <td>Secretary</td>
+                        <td>Specific</td>
+                        <td>Sample</td>
+                        <td>20</td>
+                        <td>
+                            <a href="/planning/1/updateTarget">
+                                <input type="button" class="primary-btn table-button" value="Update" />
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            <label class="my-radio">
+                                <input type="radio" id="2" name="">
+                            </label>
+                        </th>
+                        <td>2022</td>
+                        <td>Colombo</td>
+                        <td>Amal Perera</td>
+                        <td>Secretary</td>
+                        <td>Specific</td>
+                        <td>Sample</td>
+                        <td>20</td>
+                        <td>
+                            <a href="#">
+                                <input type="button" class="primary-btn table-button" value="Update" />
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            <label class="my-radio">
+                                <input type="radio" id="3" name="">
+                            </label>
+                        </th>
+                        <td>2022</td>
+                        <td>Colombo</td>
+                        <td>Amal Perera</td>
+                        <td>Secretary</td>
+                        <td>Specific</td>
+                        <td>Sample</td>
+                        <td>20</td>
+                        <td>
+                            <a href="#">
+                                <input type="button" class="primary-btn table-button" value="Update" />
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">
+                            <label class="my-radio">
+                                <input type="radio" id="4" name="">
+                            </label>
+                        </th>
+                        <td>2022</td>
+                        <td>Colombo</td>
+                        <td>Amal Perera</td>
+                        <td>Secretary</td>
+                        <td>Specific</td>
+                        <td>Sample</td>
+                        <td>20</td>
+                        <td>
+                            <a href="#">
+                                <input type="button" class="primary-btn table-button" value="Update"  />
+                            </a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            @*----------------table end------------------*@
+
+    </div>
+</div>
+
+
+
+
+
+@code {
+
+    string [] year = { "2019", "2020" , "2021" , "2022" };
+    string [] district = { "Gampaha", "Kaluthara" , "Galle" , "Colombo" };
+    string [] dsDevision =  { "DS Division 01", "DS Division 02", "DS Division 03", "DS Division 04" };
+    string [] designation =  { "Executive", "Secretary"};
+    string [] officerName = { "Mr. R Fernando", "Mrs. A Abhesinghe", "Mr. S T Perera" };
+    
+
+    private string selectedOfficerName;
+    private string selectedYear;
+    private string selectedDSDivision;
+    private string selectedDistrict;
+    private string selectedDesignatin;
+
+
+    protected override void OnInitialized()
+    {
+        base.OnInitialized();
+    }
+
+    private async void onClick_Search()
+    {
+        if (selectedOfficerName == string.Empty || selectedOfficerName == null ||
+            selectedDSDivision == string.Empty || selectedDSDivision == null ||
+            selectedDistrict == string.Empty || selectedDistrict == null ||
+            selectedDesignatin == string.Empty || selectedDesignatin == null ||
+            selectedYear == string.Empty || selectedYear == null)
+        { 
+            await JSRuntime.InvokeAsync<object>("ErrorAlert", "error", "", "Please fill all the required data");
+        }
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        @*------------------ ex ------------------*@
+
+
+                       @*
+                        <div class="form-floating">
+                        <select class="form-select" @bind="selectedYear">
+                                <option value=""></option>
+                                <option value="2022">2022</option>
+                                <option value="2021">2021</option>
+                                <option value="2020">2020</option>
+                                <option value="2019">2019</option>
+                            </select>
+                            <label for="floatingSelect">Year</label>
+                        </div><br />
+
+                        <div class="form-floating">
+                        <select class="form-select" @bind="selectedDistrict">
+                                <option value=""></option>
+                                <option value="Gampaha">Gampaha</option>
+                                <option value="Kaluthara">Kaluthara</option>
+                                <option value="Galle">Galle</option>
+                                <option value="Mathara">Mathara</option>
+                            </select>
+                            <label for="room" class="special-label-1">District: </label>
+                        </div><br />
+
+                        <div class="form-floating">
+                        <select class="form-select" @bind="selectedOfficerName">
+                                <option value=""></option>
+                                <option value="Mr. R Fernando">Mr. R Fernando</option>
+                                <option value="Mrs. A Abhesinghe">Mrs. A Abhesinghe</option>
+                                <option value="Mr. S T Perera">Mr. S T Perera</option>
+                            </select>
+                            <label>Officer Name: </label>
+                        </div><br />*@
+
+
+                       @* <div class="form-floating">
+                        <select class="form-select" @bind="selectedDSDivision">
+                                <option value=""></option>
+                                <option value="DS Division 1">DS Division 1</option>
+                                <option value="DS Division 2">DS Division 2</option>
+                                <option value="DS Division 3">DS Division 3</option>
+                            </select>
+                            <label for="room">DS Division: </label>
+                        </div><br />
+
+                        <div class="form-floating">
+                            <select class="form-select" @bind="selectedDesignatin">
+                                <option value=""></option>
+                                <option value="Secretary">Secretary</option>
+                                <option value="Associate">Associate</option>
+                                <option value="Executive">Executive</option>
+                            </select>
+                            <label>Designation: </label>
+                        </div><br />*@

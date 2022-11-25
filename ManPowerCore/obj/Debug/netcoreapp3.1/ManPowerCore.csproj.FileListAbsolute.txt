@@ -1,0 +1,130 @@
+D:/SLIIT/Intern bellwantage/Man Power/ManPowerCore/obj/Debug/netcoreapp3.1/ManPowerCore.csproj.AssemblyReference.cache
+D:/SLIIT/Intern bellwantage/Man Power/ManPowerCore/obj/Debug/netcoreapp3.1/ManPowerCore.GeneratedMSBuildEditorConfig.editorconfig
+D:/SLIIT/Intern bellwantage/Man Power/ManPowerCore/obj/Debug/netcoreapp3.1/ManPowerCore.AssemblyInfoInputs.cache
+D:/SLIIT/Intern bellwantage/Man Power/ManPowerCore/obj/Debug/netcoreapp3.1/ManPowerCore.AssemblyInfo.cs
+D:/SLIIT/Intern bellwantage/Man Power/ManPowerCore/obj/Debug/netcoreapp3.1/ManPowerCore.csproj.CoreCompileInputs.cache
+D:/SLIIT/Intern bellwantage/Man Power/ManPowerCore/bin/Debug/netcoreapp3.1/ManPowerCore.deps.json
+D:/SLIIT/Intern bellwantage/Man Power/ManPowerCore/bin/Debug/netcoreapp3.1/ManPowerCore.dll
+D:/SLIIT/Intern bellwantage/Man Power/ManPowerCore/bin/Debug/netcoreapp3.1/ManPowerCore.pdb
+D:/SLIIT/Intern bellwantage/Man Power/ManPowerCore/obj/Debug/netcoreapp3.1/ManPowerCore.dll
+D:/SLIIT/Intern bellwantage/Man Power/ManPowerCore/obj/Debug/netcoreapp3.1/ManPowerCore.pdb
+C:/Users/MSI GAMER/OneDrive/Desktop/Man Power/ManPowerCore/bin/Debug/netcoreapp3.1/ManPowerCore.deps.json
+C:/Users/MSI GAMER/OneDrive/Desktop/Man Power/ManPowerCore/bin/Debug/netcoreapp3.1/ManPowerCore.dll
+C:/Users/MSI GAMER/OneDrive/Desktop/Man Power/ManPowerCore/bin/Debug/netcoreapp3.1/ManPowerCore.pdb
+C:/Users/MSI GAMER/OneDrive/Desktop/Man Power/ManPowerCore/obj/Debug/netcoreapp3.1/ManPowerCore.csproj.AssemblyReference.cache
+C:/Users/MSI GAMER/OneDrive/Desktop/Man Power/ManPowerCore/obj/Debug/netcoreapp3.1/ManPowerCore.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/MSI GAMER/OneDrive/Desktop/Man Power/ManPowerCore/obj/Debug/netcoreapp3.1/ManPowerCore.AssemblyInfoInputs.cache
+C:/Users/MSI GAMER/OneDrive/Desktop/Man Power/ManPowerCore/obj/Debug/netcoreapp3.1/ManPowerCore.AssemblyInfo.cs
+C:/Users/MSI GAMER/OneDrive/Desktop/Man Power/ManPowerCore/obj/Debug/netcoreapp3.1/ManPowerCore.csproj.CoreCompileInputs.cache
+C:/Users/MSI GAMER/OneDrive/Desktop/Man Power/ManPowerCore/obj/Debug/netcoreapp3.1/ManPowerCore.dll
+C:/Users/MSI GAMER/OneDrive/Desktop/Man Power/ManPowerCore/obj/Debug/netcoreapp3.1/ManPowerCore.pdb
+/Users/hansipabasara/Downloads/Man Power 2/ManPowerCore/bin/Debug/netcoreapp3.1/ManPowerCore.deps.json
+/Users/hansipabasara/Downloads/Man Power 2/ManPowerCore/bin/Debug/netcoreapp3.1/ManPowerCore.dll
+/Users/hansipabasara/Downloads/Man Power 2/ManPowerCore/bin/Debug/netcoreapp3.1/ManPowerCore.pdb
+/Users/hansipabasara/Downloads/Man Power 2/ManPowerCore/obj/Debug/netcoreapp3.1/ManPowerCore.csproj.AssemblyReference.cache
+/Users/hansipabasara/Downloads/Man Power 2/ManPowerCore/obj/Debug/netcoreapp3.1/ManPowerCore.GeneratedMSBuildEditorConfig.editorconfig
+/Users/hansipabasara/Downloads/Man Power 2/ManPowerCore/obj/Debug/netcoreapp3.1/ManPowerCore.AssemblyInfoInputs.cache
+/Users/hansipabasara/Downloads/Man Power 2/ManPowerCore/obj/Debug/netcoreapp3.1/ManPowerCore.AssemblyInfo.cs
+/Users/hansipabasara/Downloads/Man Power 2/ManPowerCore/obj/Debug/netcoreapp3.1/ManPowerCore.csproj.CoreCompileInputs.cache
+/Users/hansipabasara/Downloads/Man Power 2/ManPowerCore/obj/Debug/netcoreapp3.1/ManPowerCore.dll
+/Users/hansipabasara/Downloads/Man Power 2/ManPowerCore/obj/Debug/netcoreapp3.1/ManPowerCore.pdb
+/Users/hansipabasara/Desktop/Man Power 2/ManPowerCore/bin/Debug/netcoreapp3.1/ManPowerCore.deps.json
+/Users/hansipabasara/Desktop/Man Power 2/ManPowerCore/bin/Debug/netcoreapp3.1/ManPowerCore.dll
+/Users/hansipabasara/Desktop/Man Power 2/ManPowerCore/bin/Debug/netcoreapp3.1/ManPowerCore.pdb
+/Users/hansipabasara/Desktop/Man Power 2/ManPowerCore/obj/Debug/netcoreapp3.1/ManPowerCore.csproj.AssemblyReference.cache
+/Users/hansipabasara/Desktop/Man Power 2/ManPowerCore/obj/Debug/netcoreapp3.1/ManPowerCore.GeneratedMSBuildEditorConfig.editorconfig
+/Users/hansipabasara/Desktop/Man Power 2/ManPowerCore/obj/Debug/netcoreapp3.1/ManPowerCore.AssemblyInfoInputs.cache
+/Users/hansipabasara/Desktop/Man Power 2/ManPowerCore/obj/Debug/netcoreapp3.1/ManPowerCore.AssemblyInfo.cs
+/Users/hansipabasara/Desktop/Man Power 2/ManPowerCore/obj/Debug/netcoreapp3.1/ManPowerCore.csproj.CoreCompileInputs.cache
+/Users/hansipabasara/Desktop/Man Power 2/ManPowerCore/obj/Debug/netcoreapp3.1/ManPowerCore.dll
+/Users/hansipabasara/Desktop/Man Power 2/ManPowerCore/obj/Debug/netcoreapp3.1/ManPowerCore.pdb
+C:\Users\Hansi\Desktop\Man Power 2\ManPowerCore\bin\Debug\netcoreapp3.1\ManPowerCore.deps.json
+C:\Users\Hansi\Desktop\Man Power 2\ManPowerCore\bin\Debug\netcoreapp3.1\ManPowerCore.dll
+C:\Users\Hansi\Desktop\Man Power 2\ManPowerCore\bin\Debug\netcoreapp3.1\ManPowerCore.pdb
+C:\Users\Hansi\Desktop\Man Power 2\ManPowerCore\obj\Debug\netcoreapp3.1\ManPowerCore.csproj.AssemblyReference.cache
+C:\Users\Hansi\Desktop\Man Power 2\ManPowerCore\obj\Debug\netcoreapp3.1\ManPowerCore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Hansi\Desktop\Man Power 2\ManPowerCore\obj\Debug\netcoreapp3.1\ManPowerCore.AssemblyInfoInputs.cache
+C:\Users\Hansi\Desktop\Man Power 2\ManPowerCore\obj\Debug\netcoreapp3.1\ManPowerCore.AssemblyInfo.cs
+C:\Users\Hansi\Desktop\Man Power 2\ManPowerCore\obj\Debug\netcoreapp3.1\ManPowerCore.csproj.CoreCompileInputs.cache
+C:\Users\Hansi\Desktop\Man Power 2\ManPowerCore\obj\Debug\netcoreapp3.1\ManPowerCore.dll
+C:\Users\Hansi\Desktop\Man Power 2\ManPowerCore\obj\Debug\netcoreapp3.1\ManPowerCore.pdb
+C:\Users\Hansi\Desktop\New folder (2)\ManPowerCore\bin\Debug\netcoreapp3.1\ManPowerCore.deps.json
+C:\Users\Hansi\Desktop\New folder (2)\ManPowerCore\bin\Debug\netcoreapp3.1\ManPowerCore.dll
+C:\Users\Hansi\Desktop\New folder (2)\ManPowerCore\bin\Debug\netcoreapp3.1\ManPowerCore.pdb
+C:\Users\Hansi\Desktop\New folder (2)\ManPowerCore\obj\Debug\netcoreapp3.1\ManPowerCore.csproj.AssemblyReference.cache
+C:\Users\Hansi\Desktop\New folder (2)\ManPowerCore\obj\Debug\netcoreapp3.1\ManPowerCore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Hansi\Desktop\New folder (2)\ManPowerCore\obj\Debug\netcoreapp3.1\ManPowerCore.AssemblyInfoInputs.cache
+C:\Users\Hansi\Desktop\New folder (2)\ManPowerCore\obj\Debug\netcoreapp3.1\ManPowerCore.AssemblyInfo.cs
+C:\Users\Hansi\Desktop\New folder (2)\ManPowerCore\obj\Debug\netcoreapp3.1\ManPowerCore.csproj.CoreCompileInputs.cache
+C:\Users\Hansi\Desktop\New folder (2)\ManPowerCore\obj\Debug\netcoreapp3.1\ManPowerCore.dll
+C:\Users\Hansi\Desktop\New folder (2)\ManPowerCore\obj\Debug\netcoreapp3.1\ManPowerCore.pdb
+C:\Users\MSI GAMER\OneDrive\Desktop\New folder (2)\ManPowerCore\obj\Debug\netcoreapp3.1\ManPowerCore.csproj.AssemblyReference.cache
+C:\Users\MSI GAMER\OneDrive\Desktop\New folder (2)\ManPowerCore\obj\Debug\netcoreapp3.1\ManPowerCore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MSI GAMER\OneDrive\Desktop\New folder (2)\ManPowerCore\obj\Debug\netcoreapp3.1\ManPowerCore.AssemblyInfoInputs.cache
+C:\Users\MSI GAMER\OneDrive\Desktop\New folder (2)\ManPowerCore\obj\Debug\netcoreapp3.1\ManPowerCore.AssemblyInfo.cs
+C:\Users\MSI GAMER\OneDrive\Desktop\New folder (2)\ManPowerCore\obj\Debug\netcoreapp3.1\ManPowerCore.csproj.CoreCompileInputs.cache
+C:\Users\MSI GAMER\OneDrive\Desktop\New folder (2)\ManPowerCore\obj\Debug\netcoreapp3.1\ManPowerCore.dll
+C:\Users\MSI GAMER\OneDrive\Desktop\New folder (2)\ManPowerCore\obj\Debug\netcoreapp3.1\ManPowerCore.pdb
+C:\Users\MSI GAMER\OneDrive\Desktop\New folder (2)\ManPowerCore\bin\Debug\netcoreapp3.1\ManPowerCore.deps.json
+C:\Users\MSI GAMER\OneDrive\Desktop\New folder (2)\ManPowerCore\bin\Debug\netcoreapp3.1\ManPowerCore.dll
+C:\Users\MSI GAMER\OneDrive\Desktop\New folder (2)\ManPowerCore\bin\Debug\netcoreapp3.1\ManPowerCore.pdb
+C:\Users\Maduka\Desktop\New folder (2)\ManPowerCore\bin\Debug\netcoreapp3.1\ManPowerCore.deps.json
+C:\Users\Maduka\Desktop\New folder (2)\ManPowerCore\bin\Debug\netcoreapp3.1\ManPowerCore.dll
+C:\Users\Maduka\Desktop\New folder (2)\ManPowerCore\bin\Debug\netcoreapp3.1\ManPowerCore.pdb
+C:\Users\Maduka\Desktop\New folder (2)\ManPowerCore\obj\Debug\netcoreapp3.1\ManPowerCore.csproj.AssemblyReference.cache
+C:\Users\Maduka\Desktop\New folder (2)\ManPowerCore\obj\Debug\netcoreapp3.1\ManPowerCore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Maduka\Desktop\New folder (2)\ManPowerCore\obj\Debug\netcoreapp3.1\ManPowerCore.AssemblyInfoInputs.cache
+C:\Users\Maduka\Desktop\New folder (2)\ManPowerCore\obj\Debug\netcoreapp3.1\ManPowerCore.AssemblyInfo.cs
+C:\Users\Maduka\Desktop\New folder (2)\ManPowerCore\obj\Debug\netcoreapp3.1\ManPowerCore.csproj.CoreCompileInputs.cache
+C:\Users\Maduka\Desktop\New folder (2)\ManPowerCore\obj\Debug\netcoreapp3.1\ManPowerCore.dll
+C:\Users\Maduka\Desktop\New folder (2)\ManPowerCore\obj\Debug\netcoreapp3.1\ManPowerCore.pdb
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerCore\bin\Debug\netcoreapp3.1\ManPowerCore.deps.json
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerCore\bin\Debug\netcoreapp3.1\ManPowerCore.dll
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerCore\bin\Debug\netcoreapp3.1\ManPowerCore.pdb
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerCore\obj\Debug\netcoreapp3.1\ManPowerCore.csproj.AssemblyReference.cache
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerCore\obj\Debug\netcoreapp3.1\ManPowerCore.GeneratedMSBuildEditorConfig.editorconfig
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerCore\obj\Debug\netcoreapp3.1\ManPowerCore.AssemblyInfoInputs.cache
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerCore\obj\Debug\netcoreapp3.1\ManPowerCore.AssemblyInfo.cs
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerCore\obj\Debug\netcoreapp3.1\ManPowerCore.csproj.CoreCompileInputs.cache
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerCore\obj\Debug\netcoreapp3.1\ManPowerCore.dll
+D:\SLIIT\Intern bellwantage\ManPower new\ManPowerCore\obj\Debug\netcoreapp3.1\ManPowerCore.pdb
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerCore\bin\Debug\netcoreapp3.1\ManPowerCore.deps.json
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerCore\bin\Debug\netcoreapp3.1\ManPowerCore.dll
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerCore\bin\Debug\netcoreapp3.1\ManPowerCore.pdb
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerCore\obj\Debug\netcoreapp3.1\ManPowerCore.csproj.AssemblyReference.cache
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerCore\obj\Debug\netcoreapp3.1\ManPowerCore.GeneratedMSBuildEditorConfig.editorconfig
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerCore\obj\Debug\netcoreapp3.1\ManPowerCore.AssemblyInfoInputs.cache
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerCore\obj\Debug\netcoreapp3.1\ManPowerCore.AssemblyInfo.cs
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerCore\obj\Debug\netcoreapp3.1\ManPowerCore.csproj.CoreCompileInputs.cache
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerCore\obj\Debug\netcoreapp3.1\ManPowerCore.dll
+D:\SLIIT\Intern bellwantage\ManPower New Copy\ManPower new\ManPowerCore\obj\Debug\netcoreapp3.1\ManPowerCore.pdb
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerCore\bin\Debug\netcoreapp3.1\ManPowerCore.deps.json
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerCore\bin\Debug\netcoreapp3.1\ManPowerCore.dll
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerCore\bin\Debug\netcoreapp3.1\ManPowerCore.pdb
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerCore\obj\Debug\netcoreapp3.1\ManPowerCore.csproj.AssemblyReference.cache
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerCore\obj\Debug\netcoreapp3.1\ManPowerCore.GeneratedMSBuildEditorConfig.editorconfig
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerCore\obj\Debug\netcoreapp3.1\ManPowerCore.AssemblyInfoInputs.cache
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerCore\obj\Debug\netcoreapp3.1\ManPowerCore.AssemblyInfo.cs
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerCore\obj\Debug\netcoreapp3.1\ManPowerCore.csproj.CoreCompileInputs.cache
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerCore\obj\Debug\netcoreapp3.1\ManPowerCore.dll
+D:\SLIIT\Intern bellwantage\Man Power 2\ManPowerCore\obj\Debug\netcoreapp3.1\ManPowerCore.pdb
+C:\Users\Hansi\Downloads\Man Power 2\ManPowerCore\obj\Debug\netcoreapp3.1\ManPowerCore.csproj.AssemblyReference.cache
+C:\Users\Hansi\Downloads\Man Power 2\ManPowerCore\obj\Debug\netcoreapp3.1\ManPowerCore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Hansi\Downloads\Man Power 2\ManPowerCore\obj\Debug\netcoreapp3.1\ManPowerCore.AssemblyInfoInputs.cache
+C:\Users\Hansi\Downloads\Man Power 2\ManPowerCore\obj\Debug\netcoreapp3.1\ManPowerCore.AssemblyInfo.cs
+C:\Users\Hansi\Downloads\Man Power 2\ManPowerCore\obj\Debug\netcoreapp3.1\ManPowerCore.csproj.CoreCompileInputs.cache
+C:\Users\Hansi\Downloads\Man Power 2\ManPowerCore\bin\Debug\netcoreapp3.1\ManPowerCore.deps.json
+C:\Users\Hansi\Downloads\Man Power 2\ManPowerCore\bin\Debug\netcoreapp3.1\ManPowerCore.dll
+C:\Users\Hansi\Downloads\Man Power 2\ManPowerCore\bin\Debug\netcoreapp3.1\ManPowerCore.pdb
+C:\Users\Hansi\Downloads\Man Power 2\ManPowerCore\obj\Debug\netcoreapp3.1\ManPowerCore.dll
+C:\Users\Hansi\Downloads\Man Power 2\ManPowerCore\obj\Debug\netcoreapp3.1\ManPowerCore.pdb
+E:\Industry Bv Projects\Man Power 2\ManPowerCore\bin\Debug\netcoreapp3.1\ManPowerCore.deps.json
+E:\Industry Bv Projects\Man Power 2\ManPowerCore\bin\Debug\netcoreapp3.1\ManPowerCore.dll
+E:\Industry Bv Projects\Man Power 2\ManPowerCore\bin\Debug\netcoreapp3.1\ManPowerCore.pdb
+E:\Industry Bv Projects\Man Power 2\ManPowerCore\obj\Debug\netcoreapp3.1\ManPowerCore.csproj.AssemblyReference.cache
+E:\Industry Bv Projects\Man Power 2\ManPowerCore\obj\Debug\netcoreapp3.1\ManPowerCore.GeneratedMSBuildEditorConfig.editorconfig
+E:\Industry Bv Projects\Man Power 2\ManPowerCore\obj\Debug\netcoreapp3.1\ManPowerCore.AssemblyInfoInputs.cache
+E:\Industry Bv Projects\Man Power 2\ManPowerCore\obj\Debug\netcoreapp3.1\ManPowerCore.AssemblyInfo.cs
+E:\Industry Bv Projects\Man Power 2\ManPowerCore\obj\Debug\netcoreapp3.1\ManPowerCore.csproj.CoreCompileInputs.cache
+E:\Industry Bv Projects\Man Power 2\ManPowerCore\obj\Debug\netcoreapp3.1\ManPowerCore.dll
+E:\Industry Bv Projects\Man Power 2\ManPowerCore\obj\Debug\netcoreapp3.1\ManPowerCore.pdb

@@ -1,0 +1,153 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Melstasoft\\Desktop\\New folder\\ManPowerWeb\\ManPowerWeb.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Melstasoft\\Desktop\\New folder\\DemoModels\\DemoModels.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Melstasoft\\Desktop\\New folder\\DemoModels\\DemoModels.csproj",
+        "projectName": "DemoModels",
+        "projectPath": "C:\\Users\\Melstasoft\\Desktop\\New folder\\DemoModels\\DemoModels.csproj",
+        "packagesPath": "C:\\Users\\Melstasoft\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Melstasoft\\Desktop\\New folder\\DemoModels\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Melstasoft\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Melstasoft\\Desktop\\New folder\\ManPowerCore\\ManPowerCore.csproj": {
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Melstasoft\\Desktop\\New folder\\ManPowerCore\\ManPowerCore.csproj",
+        "projectName": "ManPowerCore",
+        "projectPath": "C:\\Users\\Melstasoft\\Desktop\\New folder\\ManPowerCore\\ManPowerCore.csproj",
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {}
+      }
+    },
+    "C:\\Users\\Melstasoft\\Desktop\\New folder\\ManPowerWeb\\ManPowerWeb.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Melstasoft\\Desktop\\New folder\\ManPowerWeb\\ManPowerWeb.csproj",
+        "projectName": "ManPowerWeb",
+        "projectPath": "C:\\Users\\Melstasoft\\Desktop\\New folder\\ManPowerWeb\\ManPowerWeb.csproj",
+        "packagesPath": "C:\\Users\\Melstasoft\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Melstasoft\\Desktop\\New folder\\ManPowerWeb\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Melstasoft\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\Users\\Melstasoft\\Desktop\\New folder\\DemoModels\\DemoModels.csproj": {
+                "projectPath": "C:\\Users\\Melstasoft\\Desktop\\New folder\\DemoModels\\DemoModels.csproj"
+              },
+              "C:\\Users\\Melstasoft\\Desktop\\New folder\\ManPowerCore\\ManPowerCore.csproj": {
+                "projectPath": "C:\\Users\\Melstasoft\\Desktop\\New folder\\ManPowerCore\\ManPowerCore.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "dependencies": {
+            "CurrieTechnologies.Razor.SweetAlert2": {
+              "target": "Package",
+              "version": "[5.2.1, )"
+            },
+            "Radzen.Blazor": {
+              "target": "Package",
+              "version": "[3.20.12, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

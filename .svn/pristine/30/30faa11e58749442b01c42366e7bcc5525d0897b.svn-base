@@ -1,0 +1,145 @@
+﻿@page "/planning/UpcommingProgramme"
+@inject IJSRuntime JSRuntime
+@using System.Text.RegularExpressions
+@inject NavigationManager NavigationManager
+
+<div id="main">
+       
+            <div class="wizard-heading">Upcoming Programs</div>
+            <div class="form-floating mb-3">
+            <RadzenCard>
+                <div class="row">
+                    <div class="col-5">
+                    <label>Date</label>
+                    <RadzenDatePicker @bind-Value=@startDate DateFormat="d" Change=@(args => OnChange(args, "DatePicker", "MM/dd/yyyy")) Class="w-100" Name="date" />
+                    </div>
+
+                    <div class="col-5" style="margin-right:100px;">
+                    <label>Programe Type:</label>
+                    <RadzenDropDown AllowClear="true" TValue="int" Class="w-100" Placeholder=" " Data="@listProgramType" Name="programe_type"
+                    SelectedItem="selectedProgrameType"  ValueProperty="ProgramTypeId" TextProperty="ProgramTypeName" @bind-Value="selectedProgrameType" Style="margin-bottom:10px;"></RadzenDropDown>
+                    </div>
+
+                    <div class="row">
+
+                    <div class="col-5" style="margin-right:100px;">
+
+                    <label>District : </label>
+                    <RadzenDropDown AllowClear="true" TValue="int" Class="w-100" Placeholder=" " Data="@listDistrict" Name="district"
+                                    SelectedItem="selecteddistrict" @bind-Value="selecteddistrict" ValueProperty="DepartmentUnitId" TextProperty="Name" Style="margin-bottom:10px;"></RadzenDropDown>
+                    </div>                                  
+
+                    </div>
+
+                    <div class="row">
+                        <div class="col-6">
+                            <input type="button" class="primary-btn" value="Search" @onclick="onClick_Search" />
+                        </div>
+                    </div>
+                    <br />                    
+
+                </div>
+            </RadzenCard>
+            </div>  
+         
+            <RadzenCard>
+
+               <RadzenDataGrid AllowFiltering="true" AllowColumnResize="true" AllowAlternatingRows="false" FilterMode="FilterMode.Advanced" AllowSorting="true" PageSize="10" AllowPaging="true" PagerHorizontalAlign="HorizontalAlign.Left" ShowPagingSummary="true"
+                Data="@programTargetsList" TItem="ProgramTarget" ColumnWidth="300px" LogicalFilterOperator="LogicalFilterOperator.Or">
+                    <Columns>
+                        <RadzenDataGridColumn TItem="ProgramTarget" Property="Nic" Title="Officer Name" Frozen="true" Width="160px" />
+                        <RadzenDataGridColumn TItem="ProgramTarget" Property="InduvidualBeneficiaryName" Title="District" Width="160px"/>
+                        <RadzenDataGridColumn TItem="ProgramTarget" Property="Gender" Title="DS Division" Width="200px" />
+                        <RadzenDataGridColumn TItem="ProgramTarget" Property="ContactNumber" Title="Program Catogery" Width="120px" />
+                        <RadzenDataGridColumn TItem="ProgramTarget" Property="ProgramName" Title="Program" Width="120px" />
+                        <RadzenDataGridColumn TItem="ProgramTarget" Property="StartDate" Title="Program Date" Width="120px" />
+                        <RadzenDataGridColumn TItem="ProgramTarget" Property="ProgramTypeId" Title="Program Type" Width="120px" />
+                        @*<RadzenDataGridColumn TItem="ProgramTarget._Program" Property="Name" Title="Action" Width="100px" >*@
+                        <RadzenDataGridColumn TItem="ProgramTarget" Title="Action" Width="100px" >
+                        <Template Context="programTargetsList">
+                            <RadzenButton Shade="Shade.Lighter" ButtonStyle="ButtonStyle.Success" Text="View" Size="ButtonSize.Medium" Click="() => navigateToView(programTargetsList.ProgramTargetId)"  @onclick:stopPropagation="true" Style="width:80px;"> </RadzenButton>
+                        </Template>
+                        </RadzenDataGridColumn>
+                     </Columns>
+               </RadzenDataGrid>
+            </RadzenCard>
+
+</div>
+
+@code {
+
+    private int selectedProgrameType;
+    private int selecteddistrict;
+    //private DateTime date;
+
+    //private string emptyText = "No Items to display!";
+    //private List<Upcommingmodel> Upcomming = new List<Upcommingmodel> ();
+
+    private List<ProgramTarget> programTargetsList = new List<ProgramTarget>();
+    List<DepartmentUnit> listDistrict = new List<DepartmentUnit>();
+    List<ProgramType> listProgramType = new List<ProgramType>();
+
+    protected override void OnInitialized()
+    {
+        DepartmentUnitTypeController _DepartmentUnitTypeController = ControllerFactory.CreateDepartmentUnitTypeController();
+        listDistrict = _DepartmentUnitTypeController.GetDepartmentUnitType(2, true)._DepartmentUnit;
+
+        ProgramTypeController programTypeController = ControllerFactory.CreateProgramTypeController();
+        listProgramType = programTypeController.GetAllProgramType(false);
+
+        ProgramTargetController programTargetController = ControllerFactory.CreateProgramTargetController();
+        programTargetsList = programTargetController.GetAllProgramTarget(false,false,false,false);
+    }
+
+    async Task navigateToView(int ProgramTargetId)
+    {
+        NavigationManager.NavigateTo($"/UpcommingProgramme/ViewUpcommingProgramme/{ProgramTargetId}");
+    }
+    List<ProgramTarget> ProgramTrgetList = new List<ProgramTarget>();
+    private void onClick_Search()
+    {
+        
+        ProgramTarget programTarget = new ProgramTarget();
+        ProgramTargetController programTargetController = ControllerFactory.CreateProgramTargetController();
+
+        ProgramTrgetList = programTargetController.GetAllProgramTarget(selectedProgrameType);
+    }
+
+
+        //-------------- Date Picker handler --------------------//
+
+    DateTime? startDate = DateTime.Today;
+    DateTime? date = DateTime.Today;
+
+    IEnumerable<DateTime> dates = new DateTime[] { DateTime.Today.AddDays(-1), DateTime.Today.AddDays(1) };
+
+
+
+    void OnChange(DateTime? value, string name, string format)
+    {
+    }
+
+    void DateRenderSpecial(DateRenderEventArgs args)
+    {
+        if (dates.Contains(args.Date))
+        {
+            args.Attributes.Add("style", "background-color: #ff6d41; border-color: white;");
+        }
+    }
+
+    void DateRender(DateRenderEventArgs args)
+    {
+        args.Disabled = args.Disabled || dates.Contains(args.Date);
+    }
+
+    void DateRenderNoWeekends(DateRenderEventArgs args)
+    {
+        args.Disabled = args.Disabled || args.Date.DayOfWeek == DayOfWeek.Sunday || args.Date.DayOfWeek == DayOfWeek.Saturday;
+    }
+
+    void OnTodayClick()
+    {
+        startDate = DateTime.Today;
+        date = DateTime.Today;
+    }
+}

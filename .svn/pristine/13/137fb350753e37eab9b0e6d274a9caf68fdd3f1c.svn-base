@@ -1,0 +1,65 @@
+﻿using ManPowerCore.Common;
+using ManPowerCore.Domain;
+using ManPowerCore.Infrastructure;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ManPowerCore.Controller
+{
+    public interface DepartmentUnitTypeController
+    {
+        List<DepartmentUnitType> GetAllDepartmentUnitType();
+        DepartmentUnitType GetDepartmentUnitType(int id);
+    }
+
+    public class DepartmentUnitTypeControllerImpl : DepartmentUnitTypeController
+    {
+        DBConnection dBConnection;
+        DepartmentUnitTypeDAO departmentUnitTypeDAO = DAOFactory.CreateDepartmentUnitTypeDAO();
+
+        public List<DepartmentUnitType> GetAllDepartmentUnitType()
+        {
+            try
+            {
+                dBConnection = new DBConnection();
+                List<DepartmentUnitType> list = departmentUnitTypeDAO.GetAllDepartmentUnitType(dBConnection);
+                return list;
+
+            }
+            catch (Exception)
+            {
+                dBConnection.RollBack();
+                throw;
+            }
+            finally
+            {
+                if (dBConnection.con.State == System.Data.ConnectionState.Open)
+                    dBConnection.Commit();
+            }
+
+        }
+
+        public DepartmentUnitType GetDepartmentUnitType(int id)
+        {
+            DBConnection dbConnection = new DBConnection();
+            try
+            {
+                DepartmentUnitTypeDAO DAO = DAOFactory.CreateDepartmentUnitTypeDAO();
+                return DAO.GetDepartmentUnitType(id, dbConnection);
+            }
+            catch (Exception ex)
+            {
+                dbConnection.RollBack();
+                throw;
+            }
+            finally
+            {
+                if (dbConnection.con.State == System.Data.ConnectionState.Open)
+                    dbConnection.Commit();
+            }
+        }
+    }
+}

@@ -1,0 +1,98 @@
+﻿using ManPowerCore.Common;
+using ManPowerCore.Domain;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ManPowerCore.Infrastructure
+{
+    public interface ProgramTargetDAO
+    {
+        List<ProgramTarget> GetAllProgramTarget(DBConnection dbConnection);
+
+        ProgramTarget GetProgramTarget(int id, DBConnection dbConnection);
+
+        int SaveProgramTarget(ProgramTarget programTarget, DBConnection dbConnection);
+
+        int UpdateProgramTarget(ProgramTarget programTarget, DBConnection dbConnection);
+
+    }
+
+    public class ProgramTargetDAOImpl : ProgramTargetDAO
+    {
+
+        public int getMaxProgramTargetId(DBConnection dbConnection)
+        {
+            dbConnection.cmd.CommandText = "SELECT NVL(MAX(ID),0) FROM PROGRAM_TARGET";
+            int orderId = Convert.ToInt32(dbConnection.cmd.ExecuteScalar());
+            if (orderId == 0)
+            {
+                orderId = 1;
+            }
+            else
+            {
+                orderId += 1;
+            }
+
+
+            return orderId;
+        }
+
+        public int SaveProgramTarget(ProgramTarget programTarget, DBConnection dbConnection)
+        {
+            int id = getMaxProgramTargetId(dbConnection);
+
+            dbConnection.cmd.CommandType = System.Data.CommandType.Text;
+            dbConnection.cmd.CommandText = "INSERT INTO PROGRAM_TARGET(ID,PROGRAM_TYPE_ID,PROGRAM_ID,TITLE,DESCRIPTION," +
+                                            "START_DATE,END_DATE,OUTCOME,VOTE_NUMBER,NO_OF_PROJECTS,ESTIMATED_AMOUNT,TARGET_YEAR," +
+                                            "TARGET_MONTH,OUTPUT,INSTRACTIONS,IS_RECOMMENDED,RECOMMENDED_BY,RECOMMENDED_DATE) " +
+
+                                 "VALUES(" + id + ",'" + programTarget.ProgramTypeId + "'," + programTarget.ProgramId + "," +
+                                 "'" + programTarget.Title + "'," + programTarget.Description + ",'" + programTarget.StartDate + "'," +
+                                 "'" + programTarget.EndDate + "'," + programTarget.Outcome + ",'" + programTarget.VoteNumber + "'," +
+                                 "'" + programTarget.NoOfProjects + "','" + programTarget.EstimatedAmount + "','" + programTarget.TargetYear + "'," +
+                                 "'" + programTarget.TargetMonth + "','" + programTarget.Output + "','" + programTarget.Instractions + "'," +
+                                 "'" + programTarget.IsRecommended + "','" + programTarget.RecommendedBy + "','" + programTarget.RecommendedDate + "') ";
+
+            dbConnection.cmd.ExecuteNonQuery();
+
+
+            return dbConnection.cmd.ExecuteNonQuery();
+        }
+
+        public int UpdateProgramTarget(ProgramTarget programTarget, DBConnection dbConnection)
+        {
+            dbConnection.cmd.CommandText = "UPDATE PROGRAM_TARGET SET PROGRAM_TYPE_ID = '" + programTarget.ProgramTypeId + "', PROGRAM_ID = " + programTarget.ProgramId + "," +
+                " TITLE = '" + programTarget.Title + "', DESCRIPTION = " + programTarget.Description + ", START_DATE = '" + programTarget.StartDate + "'," +
+                " END_DATE = '" + programTarget.EndDate + "', OUTCOME = " + programTarget.Outcome + ", VOTE_NUMBER = '" + programTarget.VoteNumber + "'," +
+                " NO_OF_PROJECTS = '" + programTarget.NoOfProjects + "', ESTIMATED_AMOUNT = '" + programTarget.EstimatedAmount + "', TARGET_YEAR = '" + programTarget.TargetYear + "'," +
+                " TARGET_MONTH = '" + programTarget.TargetMonth + "',OUTPUT = '" + programTarget.Output + "', INSTRACTIONS = '" + programTarget.Instractions + "'," +
+                " IS_RECOMMENDED = '" + programTarget.IsRecommended + "', RECOMMENDED_BY = '" + programTarget.RecommendedBy + "', RECOMMENDED_DATE = '" + programTarget.RecommendedDate + "' WHERE ID = " + programTarget.ProgramTargetId;
+
+            return dbConnection.cmd.ExecuteNonQuery();
+        }
+
+        public List<ProgramTarget> GetAllProgramTarget(DBConnection dbConnection)
+        {
+            dbConnection.cmd.CommandText = "SELECT * FROM PROGRAM ORDER BY NAME ";
+
+            dbConnection.dr = dbConnection.cmd.ExecuteReader();
+            DataAccessObject dataAccessObject = new DataAccessObject();
+            return dataAccessObject.ReadCollection<ProgramTarget>(dbConnection.dr);
+
+        }
+
+        public ProgramTarget GetProgramTarget(int id, DBConnection dbConnection)
+        {
+            dbConnection.cmd.CommandText = "SELECT * FROM PROGRAM WHERE ID = " + id + " ";
+
+            dbConnection.dr = dbConnection.cmd.ExecuteReader();
+            DataAccessObject dataAccessObject = new DataAccessObject();
+            return dataAccessObject.GetSingleOject<ProgramTarget>(dbConnection.dr);
+
+        }
+
+    }
+}

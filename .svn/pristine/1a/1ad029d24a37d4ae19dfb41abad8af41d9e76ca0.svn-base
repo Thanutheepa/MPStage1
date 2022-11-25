@@ -1,0 +1,13 @@
+﻿@inherits LayoutComponentBase
+
+<NavMenu />
+
+<div class="main">
+    <div class="top-row">
+        <img src="../header2.png" style="height:94%; width:30em" />
+    </div>
+
+    <div class="content px-4">
+        @Body
+    </div>
+</div>

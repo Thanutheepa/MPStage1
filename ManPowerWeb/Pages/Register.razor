@@ -1,0 +1,208 @@
+﻿@page "/register"
+
+@inject IJSRuntime JSRuntime
+@using System.Text.RegularExpressions
+@using Radzen
+@using System.Text.Json
+
+<div id="main">
+    @*<div class="top-row">
+                <img src="../header2.png" style="height:94%; width:30em" />
+        </div>*@
+    <RadzenCard Style="padding-left:40px;">
+        <center><div class="wizard-heading">Register Form</div></center><br/>
+        <RadzenTemplateForm TItem="SystemUser" Data=@systemUser Submit=@OnSubmit InvalidSubmit="OnInvalidSubmit">
+            <div class="row">
+                <div class="col-6">
+
+                    <div class="row">
+                        <div class="col-4">
+                            <RadzenLabel Text="Designation" />
+                        </div>
+                        <div class="col-7">
+                            <RadzenDropDown style="display: block" TValue="string" Data="@desig" Class="w-100" Name="Designation" @bind-Value="designation"/>
+                            <RadzenRequiredValidator Component="Designation" Text="Designation is required" Style="position: absolute" />
+                        </div>
+                    </div>
+                    <br /><br />
+
+                    <div class="row">
+                        <div class="col-4">
+                            <RadzenLabel Text="Name" />
+                        </div>
+                        <div class="col-7">
+                            <RadzenTextBox style="display: block" Name="name" @bind-Value="name" Class="w-100" />
+                            <RadzenRequiredValidator Component="name" Text="Name is required" Style="position: absolute" />
+                        </div>
+                    </div>
+                    <br /><br />
+
+                    <div class="row">
+                        <div class="col-4">
+                            <RadzenLabel Text="Email" />
+                        </div>
+                        <div class="col-7">
+                            <RadzenTextBox style="display: block" Name="email" @bind-Value="email" Class="w-100" />
+                            <RadzenRequiredValidator Component="email" Text="Email is required" Style="position: absolute" />
+                            <RadzenEmailValidator Component="email" Text="Invalid email address" Popup=@popup Style="position: absolute" />
+                        </div>
+                    </div>
+                    <br /><br />
+
+                    <div class="row">
+                        <div class="col-4">
+                            <RadzenLabel Text="Create Password" />
+                        </div>
+                        <div class="col-7">
+                            <RadzenPassword style="display: block" Name="pw1" @bind-Value="pw1" Class="w-100" />
+                            <RadzenRequiredValidator Component="pw1" Text="Create a Password" Style="position: absolute" />
+                            <RadzenRegexValidator Component="pw1" Text="Should have at least 1 uppercase letter, 1 lowercase letter, a number and a charactor (minimum 8 charactors)" Pattern="^(?=.*\d)(?=.*[A-Z])(?=.*[a-z])(?=.*[^\w\d\s:])([^\s]){8,32}$" Popup=@popup Style="position: absolute" />
+                        </div>
+                    </div>
+                    <br /><br />
+
+                </div>
+
+                @*----------------------------*@
+                <div class="col-6" style="padding-left:30px;">
+
+                    <div class="row">
+                        <div class="col-4">
+                            <RadzenLabel Text="Date" />
+                        </div>
+                        <div class="col-7">
+                            <RadzenDatePicker Name="date" @bind-Value="value1" DateFormat="d" Change=@(args => OnChange(args, "DatePicker", "MM/dd/yyyy")) Class="w-100" />
+                            <RadzenRequiredValidator Component="date" Text="Date is required" Style="position: absolute" />
+                        </div>
+                    </div>
+                    <br /><br />
+
+                    <div class="row">
+                        <div class="col-4">
+                            <RadzenLabel Text="Contact Number" />
+                        </div>
+                        <div class="col-7">
+                            <RadzenTextBox style="display: block" Name="phone" @bind-Value="contactNumber" Class="w-100" />
+                            <RadzenRequiredValidator Component="phone" Text="Contact number is required" Style="position: absolute" />
+                            <RadzenRegexValidator Component="phone" Text="Invaid Number" Pattern="^\d{10}$" Popup=@popup Style="position: absolute" />
+                        </div>
+                    </div>
+                    <br /><br />
+
+                    <div class="row">
+                        <div class="col-4">
+                            <RadzenLabel Text="User Name" />
+                        </div>
+                        <div class="col-7">
+                            <RadzenTextBox style="display: block" Name="uName" @bind-Value="userName" Class="w-100" />
+                            <RadzenRequiredValidator Component="uName" Text="User Name is required" Style="position: absolute" />
+                        </div>
+                    </div>
+                    <br /><br />
+                    
+                    <div class="row">
+                        <div class="col-4">
+                            <RadzenLabel Text="Confirm Password" />
+                        </div>
+                        <div class="col-7">
+                            <RadzenPassword style="display: block" Name="pw2" @bind-Value="pw2" Class="w-100" />
+                            <RadzenRequiredValidator Component="pw2" Text="Confirm Password" Style="position: absolute" />
+                            <RadzenCompareValidator Visible=@(!string.IsNullOrEmpty(pw2)) Value=@pw1 Component="pw2" Text="Passwords should be the same" Style="position: absolute" />
+                        </div>
+                    </div>
+                    <br /><br />
+
+                </div>
+            </div>
+            <br/>
+            <div class="row">
+                 <div class="col-2">
+                      <RadzenButton ButtonType="ButtonType.Submit" Text="Submit" ButtonStyle="ButtonStyle.Secondary" Shade="Shade.Darker" Style="width:130px;"></RadzenButton>
+                  </div>
+                 <div class="col-2">
+                      <RadzenButton Shade="Shade.Lighter" Text="Clear" ButtonStyle="ButtonStyle.Secondary" ButtonType="ButtonType.Submit" Style="width:130px;" Click="onClick_clear" />
+                 </div>
+            </div>
+            <br/>
+            <div class="row">
+                <p>Already have an account? <a href="/login"><b>Login</b></a></p>
+            </div>
+        </RadzenTemplateForm>
+    </RadzenCard>
+</div>
+
+@code {
+    string[] desig = { "select"};
+
+    SystemUser systemUser = new SystemUser();
+
+    private string name;
+    private string email;
+    private string contactNumber;
+    private string userName;
+    private string designation;
+    private string pw1;
+    private string pw2;
+    private DateTime value1 = DateTime.Now;
+
+    public void onClick_clear()
+    {
+        name = "";
+        email = "";
+        contactNumber = "";
+        userName = "";
+        designation = "";
+        pw1 = "";
+        pw2 = "";
+    }
+
+
+    //------------------ validator ----------------------//
+
+    bool popup;
+
+    void OnSubmit(SystemUser systemUser)
+    {
+        Console.WriteLine($"Submit: {JsonSerializer.Serialize(systemUser, new JsonSerializerOptions() { WriteIndented = true })}");
+    }
+
+    void OnInvalidSubmit(FormInvalidSubmitEventArgs args)
+    {
+        Console.WriteLine($"InvalidSubmit: {JsonSerializer.Serialize(args, new JsonSerializerOptions() { WriteIndented = true })}");
+    }
+
+
+    //-------------- Date Picker hander --------------------//
+
+
+
+    IEnumerable<DateTime> dates = new DateTime[] { DateTime.Today.AddDays(-1), DateTime.Today.AddDays(1) };
+
+    void OnChange(DateTime? value, string name, string format)
+    {
+    }
+
+    void DateRenderSpecial(DateRenderEventArgs args)
+    {
+        if (dates.Contains(args.Date))
+        {
+            args.Attributes.Add("style", "background-color: #ff6d41; border-color: white;");
+        }
+    }
+
+    void DateRender(DateRenderEventArgs args)
+    {
+        args.Disabled = args.Disabled || dates.Contains(args.Date);
+    }
+
+    void DateRenderNoWeekends(DateRenderEventArgs args)
+    {
+        args.Disabled = args.Disabled || args.Date.DayOfWeek == DayOfWeek.Sunday || args.Date.DayOfWeek == DayOfWeek.Saturday;
+    }
+
+    void OnTodayClick()
+    {
+        value1 = DateTime.Now;
+    }
+
+}

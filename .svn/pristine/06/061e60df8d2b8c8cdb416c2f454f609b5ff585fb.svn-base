@@ -1,0 +1,63 @@
+﻿using ManPowerCore.Common;
+using ManPowerCore.Domain;
+using ManPowerCore.Infrastructure;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ManPowerCore.Controller
+{
+    public interface DesignationController
+    {
+        List<Designation> GetAllDesignation();
+        Designation GetDesignation(int id);
+    }
+    public class DesignationControllerImpl : DesignationController
+    {
+        DBConnection dBConnection;
+        DesignationDAO designationDAO = DAOFactory.CreateDesignationDAO();
+        public List<Designation> GetAllDesignation()
+        {
+            try
+            {
+                dBConnection = new DBConnection();
+                List<Designation> list = designationDAO.GetAllDesignation(dBConnection);
+                return list;
+
+            }
+            catch (Exception)
+            {
+                dBConnection.RollBack();
+                throw;
+            }
+            finally
+            {
+                if (dBConnection.con.State == System.Data.ConnectionState.Open)
+                    dBConnection.Commit();
+            }
+
+        }
+
+        public Designation GetDesignation(int id)
+        {
+            DBConnection dbConnection = new DBConnection();
+            try
+            {
+                DesignationDAO DAO = DAOFactory.CreateDesignationDAO();
+                return DAO.GetDesignation(id, dbConnection);
+            }
+            catch (Exception ex)
+            {
+                dbConnection.RollBack();
+                throw;
+            }
+            finally
+            {
+                if (dbConnection.con.State == System.Data.ConnectionState.Open)
+                    dbConnection.Commit();
+            }
+        }
+    }
+}

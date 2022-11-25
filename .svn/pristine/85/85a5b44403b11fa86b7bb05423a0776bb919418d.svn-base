@@ -1,0 +1,107 @@
+﻿using ManPowerCore.Common;
+using ManPowerCore.Domain;
+using ManPowerCore.Infrastructure;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ManPowerCore.Controller
+{
+    public interface DepartmentUnitPositionsController
+    {
+        int SaveDepartmentUnitPositions(DepartmentUnitPositions departmentUnitPositions);
+        int UpdateDepartmentUnitPositions(DepartmentUnitPositions departmentUnitPositions);
+        List<DepartmentUnitPositions> GetAllDepartmentUnitPositions();
+        DepartmentUnitPositions GetDepartmentUnitPositions(int id);
+    }
+
+    public class DepartmentUnitPositionsControllerImpl : DepartmentUnitPositionsController
+    {
+        DBConnection dBConnection;
+        DepartmentUnitPositionsDAO departmentUnitPositionsDAO = DAOFactory.CreateDepartmentUnitPositionsDAO();
+        public int SaveDepartmentUnitPositions(DepartmentUnitPositions departmentUnitPositions)
+        {
+            try
+            {
+                dBConnection = new DBConnection();
+                return departmentUnitPositionsDAO.SaveDepartmentUnitPositions(departmentUnitPositions, dBConnection);
+            }
+            catch (Exception)
+            {
+                dBConnection.RollBack();
+
+                throw;
+            }
+            finally
+            {
+                if (dBConnection.con.State == System.Data.ConnectionState.Open)
+                    dBConnection.Commit();
+            }
+        }
+
+        public int UpdateDepartmentUnitPositions(DepartmentUnitPositions departmentUnitPositions)
+        {
+            try
+            {
+                dBConnection = new DBConnection();
+                var departmentUnitPositionsDetails = departmentUnitPositionsDAO.UpdateDepartmentUnitPositions(departmentUnitPositions, dBConnection);
+                return departmentUnitPositionsDetails;
+            }
+            catch (Exception)
+            {
+                dBConnection.RollBack();
+
+                throw;
+            }
+            finally
+            {
+                if (dBConnection.con.State == System.Data.ConnectionState.Open)
+                    dBConnection.Commit();
+            }
+        }
+
+        public List<DepartmentUnitPositions> GetAllDepartmentUnitPositions()
+        {
+            try
+            {
+                dBConnection = new DBConnection();
+                List<DepartmentUnitPositions> list = departmentUnitPositionsDAO.GetAllDepartmentUnitPositions(dBConnection);
+                return list;
+
+            }
+            catch (Exception)
+            {
+                dBConnection.RollBack();
+                throw;
+            }
+            finally
+            {
+                if (dBConnection.con.State == System.Data.ConnectionState.Open)
+                    dBConnection.Commit();
+            }
+
+        }
+
+        public DepartmentUnitPositions GetDepartmentUnitPositions(int id)
+        {
+            DBConnection dbConnection = new DBConnection();
+            try
+            {
+                DepartmentUnitPositionsDAO DAO = DAOFactory.CreateDepartmentUnitPositionsDAO();
+                return DAO.GetDepartmentUnitPositions(id, dbConnection);
+            }
+            catch (Exception ex)
+            {
+                dbConnection.RollBack();
+                throw;
+            }
+            finally
+            {
+                if (dbConnection.con.State == System.Data.ConnectionState.Open)
+                    dbConnection.Commit();
+            }
+        }
+    }
+}

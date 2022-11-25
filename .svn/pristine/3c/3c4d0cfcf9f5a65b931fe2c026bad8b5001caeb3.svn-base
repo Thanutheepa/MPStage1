@@ -1,0 +1,120 @@
+﻿using ManPowerCore.Common;
+using ManPowerCore.Domain;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ManPowerCore.Infrastructure
+{
+    public interface DepartmentUnitPositionsDAO
+    {
+        int SaveDepartmentUnitPositions(DepartmentUnitPositions departmentUnitPositions, DBConnection dbConnection);
+        int UpdateDepartmentUnitPositions(DepartmentUnitPositions departmentUnitPositions, DBConnection dbConnection);
+        List<DepartmentUnitPositions> GetAllDepartmentUnitPositions(DBConnection dbConnection);
+        DepartmentUnitPositions GetDepartmentUnitPositions(int id, DBConnection dbConnection);
+        List<DepartmentUnitPositions> GetAllDepartmentUnitPositionsByDepartmentUnitId(int departmentUnitId, DBConnection dbConnection);
+        List<DepartmentUnitPositions> GetAllDepartmentUnitPositionsBySystemUserId(int systemUserId, DBConnection dbConnection);
+        List<DepartmentUnitPositions> GetAllDepartmentUnitPositionByPossitionId(int possitionId, DBConnection dbConnection);
+
+
+    }
+
+    public class DepartmentUnitPositionsDAOImpl : DepartmentUnitPositionsDAO
+    {
+        public int getMaxDepartmentUnitPositionsId(DBConnection dbConnection)
+        {
+            dbConnection.cmd.CommandText = "SELECT ISNULL(MAX(ID),0) FROM DEPPARTMENT_UNIT_POSITIONS";
+            int DepartmentUnitPositionsId = Convert.ToInt32(dbConnection.cmd.ExecuteScalar());
+            if (DepartmentUnitPositionsId == 0)
+            {
+                DepartmentUnitPositionsId = 1;
+            }
+            else
+            {
+                DepartmentUnitPositionsId += 1;
+            }
+
+
+            return DepartmentUnitPositionsId;
+        }
+
+        public int SaveDepartmentUnitPositions(DepartmentUnitPositions departmentUnitPositions, DBConnection dbConnection)
+        {
+            int id = getMaxDepartmentUnitPositionsId(dbConnection);
+
+            dbConnection.cmd.CommandType = System.Data.CommandType.Text;
+            dbConnection.cmd.CommandText = "INSERT INTO DEPPARTMENT_UNIT_POSITIONS(ID,SYSTEM_USER_ID, POSSITIONS_ID, DEPARTMENT_UNIT_ID, PARENT_ID) values " +
+                $"(?,?,?,?,?) ";
+
+            dbConnection.cmd.Parameters.AddWithValue("ID", id);
+            dbConnection.cmd.Parameters.AddWithValue("SYSTEM_USER_ID", departmentUnitPositions.SystemUserId);
+            dbConnection.cmd.Parameters.AddWithValue("POSSITIONS_ID", departmentUnitPositions.PossitionsId);
+            dbConnection.cmd.Parameters.AddWithValue("DEPARTMENT_UNIT_ID", departmentUnitPositions.DepUnitId);
+            dbConnection.cmd.Parameters.AddWithValue("PARENT_ID", departmentUnitPositions.ParentId);
+
+            dbConnection.cmd.CommandType = System.Data.CommandType.Text;
+
+            dbConnection.cmd.ExecuteNonQuery();
+
+            return 1;
+        }
+
+        public int UpdateDepartmentUnitPositions(DepartmentUnitPositions departmentUnitPositions, DBConnection dbConnection)
+        {
+            dbConnection.cmd.CommandText = "UPDATE DEPPARTMENT_UNIT_POSITIONS SET SYSTEM_USER_ID = '" + departmentUnitPositions.SystemUserId + "', POSSITIONS_ID = '" + departmentUnitPositions.PossitionsId + "', DEPARTMENT_UNIT_ID = '" + departmentUnitPositions.DepUnitId + "', PARENT_ID = '" + departmentUnitPositions.ParentId + "' WHERE ID = " + departmentUnitPositions.DepUnitPossitionId;
+
+            return dbConnection.cmd.ExecuteNonQuery();
+        }
+
+        public List<DepartmentUnitPositions> GetAllDepartmentUnitPositions(DBConnection dbConnection)
+        {
+            dbConnection.cmd.CommandText = "SELECT * FROM DEPPARTMENT_UNIT_POSITIONS ";
+
+            dbConnection.dr = dbConnection.cmd.ExecuteReader();
+            DataAccessObject dataAccessObject = new DataAccessObject();
+            return dataAccessObject.ReadCollection<DepartmentUnitPositions>(dbConnection.dr);
+
+        }
+
+        public DepartmentUnitPositions GetDepartmentUnitPositions(int id, DBConnection dbConnection)
+        {
+            dbConnection.cmd.CommandText = "SELECT * FROM DEPPARTMENT_UNIT_POSITIONS WHERE ID = " + id + " ";
+
+            dbConnection.dr = dbConnection.cmd.ExecuteReader();
+            DataAccessObject dataAccessObject = new DataAccessObject();
+            return dataAccessObject.GetSingleOject<DepartmentUnitPositions>(dbConnection.dr);
+
+        }
+
+
+        public List<DepartmentUnitPositions> GetAllDepartmentUnitPositionsByDepartmentUnitId(int departmentUnitId, DBConnection dbConnection)
+        {
+            dbConnection.cmd.CommandText = "SELECT * FROM DEPPARTMENT_UNIT_POSITIONS WHERE DEPARTMENT_UNIT_ID = " + departmentUnitId + " ";
+
+            dbConnection.dr = dbConnection.cmd.ExecuteReader();
+            DataAccessObject dataAccessObject = new DataAccessObject();
+            return dataAccessObject.ReadCollection<DepartmentUnitPositions>(dbConnection.dr);
+        }
+
+
+        public List<DepartmentUnitPositions> GetAllDepartmentUnitPositionsBySystemUserId(int systemUserId, DBConnection dbConnection)
+        {
+            dbConnection.cmd.CommandText = "SELECT * FROM DEPPARTMENT_UNIT_POSITIONS WHERE SYSTEM_USER_ID = " + systemUserId + " ";
+
+            dbConnection.dr = dbConnection.cmd.ExecuteReader();
+            DataAccessObject dataAccessObject = new DataAccessObject();
+            return dataAccessObject.ReadCollection<DepartmentUnitPositions>(dbConnection.dr);
+        }
+
+        public List<DepartmentUnitPositions> GetAllDepartmentUnitPositionByPossitionId(int possitionId, DBConnection dbConnection)
+        {
+            dbConnection.cmd.CommandText = "SELECT * FROM DEPPARTMENT_UNIT_POSITIONS WHERE POSSITIONS_ID = " + possitionId + " ";
+
+            dbConnection.dr = dbConnection.cmd.ExecuteReader();
+            DataAccessObject dataAccessObject = new DataAccessObject();
+            return dataAccessObject.ReadCollection<DepartmentUnitPositions>(dbConnection.dr);
+        }
+    }
+}

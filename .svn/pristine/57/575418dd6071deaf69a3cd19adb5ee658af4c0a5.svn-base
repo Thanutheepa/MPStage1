@@ -1,0 +1,51 @@
+﻿<!-- ======= Mobile nav toggle button ======= -->
+@*<i class="bi bi-list mobile-nav-toggle d-xl-none"></i>*@
+
+<!-- ======= Header ======= -->
+<header id="header">
+    <div class="d-flex flex-column">
+        <nav id="navbar" class="nav-menu navbar">
+            <ul>
+                @* <li><a href="/" class="nav-link scrollto" @onclick="() => expandSubMenu = !expandSubMenu">Planning<i class="bx bx-down-arrow-alt"></i></a></li>*@
+
+                <ul style="margin-left:20px">
+                    <li><a href="/planning/annualTargets" class="nav-link scrollto"> <span>Anuual Target Allocation</span></a></li>
+                    <li><a href="/planning/myAnnualTargets" class="nav-link scrollto"><span>My Annual Targets</span></a></li>
+                    @*<li><a href="/UserRegister" class="nav-link scrollto"><span>User Registation</span></a></li>*@
+                    @*<li><a href="/login" class="nav-link scrollto"><span>Login</span></a></li>*@
+                    <li><a href="/AddDepartment" class="nav-link scrollto"><span>Add Department</span></a></li>
+                    <li><a href="/AddPosition" class="nav-link scrollto"><span>Add Positiont</span></a></li>
+                    <li><a href="/DME37" class="nav-link scrollto"><span>DME37</span></a></li>
+                    <li><a href="/DME42" class="nav-link scrollto"><span>DME42</span></a></li>
+                    <li><a href="/UserRegister" class="nav-link scrollto"><span>User Register</span></a></li>
+                    <li><a href="/resourcePerson" class="nav-link scrollto"><span>Resource Person</span></a></li>
+                    <li><a href="/planning/UpcommingProgramme" class="nav-link scrollto"><span>Upcoming Programs</span></a></li>
+                    <li><a href="/planning/CompletedPrograms" class="nav-link scrollto"><span>Completed programs</span></a></li>
+                    <li><a href="/scheduler" class="nav-link scrollto"><span>Program calender</span></a></li>
+                    <li><a href="/dme21" class="nav-link scrollto"><span>DME21</span></a></li>
+                    <li><a href="/dme22" class="nav-link scrollto"><span>DME22</span></a></li>
+
+                    @*<li><a href="/datagrid" class="nav-link scrollto"><span>newtable</span></a></li>
+                    <li><a href="/testPage" class="nav-link scrollto"><span>test page</span></a></li>*@
+                </ul>
+
+
+            </ul>
+
+        </nav>
+    </div>
+</header>
+
+
+@code {
+    private bool collapseNavMenu = true;
+    private bool expandSubMenu;
+
+    private string? NavMenuCssClass => collapseNavMenu ? "collapse" : null;
+
+    private void ToggleNavMenu()
+    {
+        collapseNavMenu = !collapseNavMenu;
+    }
+}
+

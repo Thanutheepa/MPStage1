@@ -1,0 +1,763 @@
+﻿@page "/planning/1/updateTarget"
+
+
+<div id="main">
+    <div class="primary-container">
+        <div class="wizard-heading">Update Targets</div>
+        <div class="form-floating mb-3">
+            <div class="row">
+                <div class="col-5" style="margin-right:100px;">
+                    <div class="form-floating">
+                        <select class="form-select">
+                            <option value="2022">2022</option>
+                            <option value="2021">2021</option>
+                            <option value="2020">2020</option>
+                            <option value="2019">2019</option>
+                        </select>
+                        <label for="floatingSelect">Year</label>
+                    </div><br />
+
+                    <div class="form-floating">
+                        <select class="form-select">
+                            <option value="Gampaha">Gampaha</option>
+                            <option value="Kaluthara">Kaluthara</option>
+                            <option value="Galle">Galle</option>
+                            <option value="Mathara">Mathara</option>
+                        </select>
+                        <label for="room" class="special-label-1">District: </label>
+                    </div><br />
+
+                    <div class="form-floating">
+                        <select class="form-select">
+                            <option value="Mr. R Fernando">Mr. R Fernando</option>
+                            <option value="Mrs. A Abhesinghe">Mrs. A Abhesinghe</option>
+                            <option value="Mr. S T Perera">Mr. S T Perera</option>
+                        </select>
+                        <label>Officer Name: </label>
+                    </div><br />
+
+                </div>
+
+
+                <div class="col-5">
+                    <div class="form-floating">
+                        <select class="form-select">
+                            <option value="DS Division 1">DS Division 1</option>
+                            <option value="DS Division 2">DS Division 2</option>
+                            <option value="DS Division 3">DS Division 3</option>
+                        </select>
+                        <label for="room">DS Division: </label>
+                    </div><br />
+
+                    <div class="form-floating">
+                        <select class="form-select">
+                            <option value="Secretary">Secretary</option>
+                            <option value="Associate">Associate</option>
+                            <option value="Executive">Executive</option>
+                        </select>
+                        <label>Designation: </label>
+                    </div><br />
+                </div>
+            </div>
+        </div>
+
+        @*---------------------------- end of first row ---------------------------*@
+
+        <br /><div class="hr"></div><br /><br/>
+
+        <div class="row">
+            <div class="col-5" style="margin-right:100px;">
+
+                <div class="form-floating">
+                    <select class="form-select">
+                        <option value="specific">Specific Targets</option>
+                        <option value="common">Common Targets</option>
+                    </select>
+                    <label for="room" class="special-label-1">Target Category: </label>
+                </div><br />
+
+                <div class="form-floating">
+                    <select class="form-select">
+                        <option value="specific">Specific Targets</option>
+                        <option value="common">Common Targets</option>
+                    </select>
+                    <label>Program instructions: </label>
+                </div><br />
+
+            </div>
+
+
+            <div class="col-5">
+
+                <div class="form-floating">
+                    <select class="form-select">
+                        <option value="1">Program 1</option>
+                        <option value="2">Program 2</option>
+                        <option value="3">Program 3</option>
+                        <option value="4">Program 4</option>
+                    </select>
+                    <label>Program: </label>
+                </div><br />
+
+                <div class="form-floating">
+                    <select class="form-select">
+                        <option value="1">323-02-01-02-1509</option>
+                        <option value="2">323-02-01-02-1509</option>
+                        <option value="3">323-02-01-02-1509</option>
+                        <option value="4">323-02-01-02-1509</option>
+                    </select>
+                    <label>vote: </label>
+                </div><br />
+
+            </div>
+        </div>
+
+        <br /><br /><br />
+
+        @*----------------------- end of row 2 --------------------------*@
+
+        <div class="row">
+            <div class="col-5">
+                <h5>Quater target: physical / financial : </h5><br/>
+                <div class="form-floating">
+                    <select class="form-select">
+                        <option value="1">Quater 1</option>
+                        <option value="2">Quater 2</option>
+                        <option value="3">Quater 3</option>
+                        <option value="4">Quater 4</option>
+                    </select>
+                    <label>Quater: </label>
+                </div><br />
+
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="123">
+                    <label for="floatingInput">Physical Count</label>
+                </div>
+
+                <div class="form-floating mb-3">
+                    <input type="email" class="form-control" id="floatingInput" placeholder="123">
+                    <label for="floatingInput">Financial Count</label>
+                </div>
+            </div>
+
+            <br /><br/>
+            <a href="#">
+                <input type="button" class="primary-btn" value="Add" />
+            </a>
+        </div>
+
+        <br/>
+
+        <table class="table primary-table">
+            <thead class="table-active">
+                <tr>
+                    <th scope="col">Quater</th>
+                    <th scope="col">Physical Count</th>
+                    <th scope="col">Financial Count</th>
+                    <th scope="col">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+
+                    <td>Q1</td>
+                    <td>1</td>
+                    <td>1000</td>
+                    <td>
+                        <a href="/planning/1/updateTarget">
+                            <input type="button" class="primary-btn" value="Delete" style="height:30px;width:100px;font-size:0.9em;" />
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Q2</td>
+                    <td>1</td>
+                    <td>1000</td>
+                    <td>
+                        <a href="#">
+                            <input type="button" class="primary-btn" value="Delete" style="height:30px;width:100px;font-size:0.9em;" />
+                        </a>
+                    </td>
+                </tr>
+                <tr class="table-success">
+                    <th scope="row">Total</th>
+                    <td>1</td>
+                    <td>1000</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <br /><br /><br />
+
+        @*---------------------------------------------------------------------------*@
+
+        <div class="row">
+            <div class="col-5">
+                <h5>Expected results : </h5><br/>
+                <div class="form-floating">
+                    <select class="form-select">
+                        <option value="1">Quater 1</option>
+                        <option value="2">Quater 2</option>
+                        <option value="3">Quater 3</option>
+                        <option value="4">Quater 4</option>
+                    </select>
+                    <label>Output: </label>
+                </div><br />
+
+                <div class="form-floating">
+                    <select class="form-select">
+                        <option value="1">10</option>
+                        <option value="2">20</option>
+                        <option value="3">30</option>
+                        <option value="4">40</option>
+                    </select>
+                    <label>Outcome: </label>
+                </div><br />
+            </div>
+        </div>
+
+        <br />
+
+        <table class="table primary-table">
+            <thead class="table-active">
+                <tr>
+                    <th scope="col" style="width:100px;">Target Category</th>
+                    <th scope="col" style="width:100px;">Program</th>
+                    <th scope="col" style="width:200px;">Vote</th>
+                    <th scope="col" style="width:200px;">Tot. Phy. target</th>
+                    <th scope="col" style="width:200px;">Tot. Fin. target</th>
+                    <th scope="col" style="width:120px;">Outcome</th>
+                    <th scope="col" style="width:100px;">Output</th>
+                    <th scope="col" style="width:100px;">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Common</td>
+                    <td>Program 1</td>
+                    <td>323-02-01-02-1509</td>
+                    <td>1</td>
+                    <td>1000</td>
+                    <td>Outcome 1</td>
+                    <td>10</td>
+                    <td>
+                        <a href="/planning/1/updateTarget">
+                            <input type="button" class="primary-btn" value="Edit" style="height:30px;width:100px;font-size:0.9em;" />
+                        </a>
+                        <br /><br />
+                        <a href="/planning/1/updateTarget">
+                            <input type="button" class="primary-btn" value="Clear" style="height:30px;width:100px;font-size:0.9em;" />
+                        </a>
+
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+        <br /><br/>
+
+        <div class="row">
+            <div class="col-5">
+
+                <div class="form-holder form-holder-2">
+                    <a href="/planning/1/addnewtarget">
+                        <input type="button" class="primary-btn" value="Save" />
+                    </a>
+                </div>
+                <br />
+
+                <div class="form-holder form-holder-2">
+                    <a href="/planning/1">
+                        <input type="button" class="primary-btn" value="Save & Submit to HQ" style="width:250px;" />
+                    </a>
+                </div>
+                <br />
+
+                <div class="form-holder form-holder-2">
+                    <input type="button" class="primary-btn" value="Clear" />
+                </div>
+                <br/>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+    <!--<div id="main">
+        <div class="page-content">
+            <div class="wizard-heading">-- PLANNING --</div>
+            <div class="wizard-v6-content" style="height:auto;">
+
+                <div class="wizard-form">
+                    <form class="form-register" id="form-register" action="#" method="post">
+                        <div id="form-total">
+
+                            <section>
+                                <div class="inner">
+                                    <div class="form-heading">
+                                        <h3>Target Allocation</h3>
+                                    </div>
+
+                                    <div class="form-row">
+                                        <div class="form-holder form-holder-2">
+                                            <label for="room" class="special-label-1">Year: </label>
+                                            <select name="room" id="room" class="form-control">
+                                                <option value="2022">2022</option>
+                                                <option value="2021">2021</option>
+                                                <option value="2020">2020</option>
+                                                <option value="2019">2019</option>
+                                            </select>
+                                            <span class="select-btn">
+                                                <i class="zmdi zmdi-chevron-down"></i>
+                                            </span>
+                                        </div>
+                                        <div class="form-holder form-holder-2">
+                                            <label for="room" class="special-label-1">DS Division: </label>
+                                            <select name="room" id="room" class="form-control">
+                                                <option value="DS Division 1">DS Division 1</option>
+                                                <option value="DS Division 2">DS Division 2</option>
+                                                <option value="DS Division 3">DS Division 3</option>
+                                            </select>
+                                            <span class="select-btn">
+                                                <i class="zmdi zmdi-chevron-down"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="form-row">
+                                        <div class="form-holder form-holder-2">
+                                            <label for="room" class="special-label-1">District: </label>
+                                            <select name="room" id="room" class="form-control">
+                                                <option value="Gampaha">Gampaha</option>
+                                                <option value="Kaluthara">Kaluthara</option>
+                                                <option value="Galle">Galle</option>
+                                                <option value="Mathara">Mathara</option>
+                                            </select>
+                                            <span class="select-btn">
+                                                <i class="zmdi zmdi-chevron-down"></i>
+                                            </span>
+                                        </div>
+                                        <div class="form-holder form-holder-2">
+                                            <label for="room" class="special-label-1">Designation: </label>
+                                            <select name="room" id="room" class="form-control">
+                                                <option value="Secretary">Secretary</option>
+                                                <option value="Associate">Associate</option>
+                                                <option value="Executive">Executive</option>
+                                            </select>
+                                            <span class="select-btn">
+                                                <i class="zmdi zmdi-chevron-down"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="form-row">
+                                        <div class="form-holder form-holder-2">
+                                            <label for="room" class="special-label-1">Officer Name: </label>
+                                            <select name="room" id="room" class="form-control">
+                                                <option value="Mr. R Fernando">Mr. R Fernando</option>
+                                                <option value="Mrs. A Abhesinghe">Mrs. A Abhesinghe</option>
+                                                <option value="Mr. S T Perera">Mr. S T Perera</option>
+                                            </select>
+                                            <span class="select-btn">
+                                                <i class="zmdi zmdi-chevron-down"></i>
+                                            </span>
+                                        </div>
+                                    </div>-->
+    @*--------------------------------------------------------------------------------------*@
+
+    <!--<br /><div class="hr"></div><br />
+
+    <div class="form-row">
+        <div class="form-holder form-holder-2">
+            <label for="room" class="special-label-1">Target Category: </label>
+            <select name="room" id="room" class="form-control">
+                <option value="specific">Specific Targets</option>
+                <option value="common">Common Targets</option>
+            </select>
+            <span class="select-btn">
+                <i class="zmdi zmdi-chevron-down"></i>
+            </span>
+        </div>
+        <div class="form-holder form-holder-2">
+            <label for="room" class="special-label-1">Program: </label>
+            <select name="room" id="room" class="form-control">
+                <option value="1">Program 1</option>
+                <option value="2">Program 2</option>
+                <option value="3">Program 3</option>
+                <option value="4">Program 4</option>
+            </select>
+            <span class="select-btn">
+                <i class="zmdi zmdi-chevron-down"></i>
+            </span>
+        </div>
+    </div>
+
+
+    <div class="form-row">
+        <div class="form-holder form-holder-2">
+            <label for="room" class="special-label-1">Program instructions: </label>
+            <select name="room" id="room" class="form-control">
+                <option value="specific">Specific Targets</option>
+                <option value="common">Common Targets</option>
+            </select>
+            <span class="select-btn">
+                <i class="zmdi zmdi-chevron-down"></i>
+            </span>
+        </div>
+        <div class="form-holder form-holder-2">
+            <label for="room" class="special-label-1">vote: </label>
+            <select name="room" id="room" class="form-control">
+                <option value="1">323-02-01-02-1509</option>
+                <option value="2">323-02-01-02-1509</option>
+                <option value="3">323-02-01-02-1509</option>
+                <option value="4">323-02-01-02-1509</option>
+            </select>
+            <span class="select-btn">
+                <i class="zmdi zmdi-chevron-down"></i>
+            </span>
+        </div>
+    </div>-->
+    @*----------------------------------------------------------------------*@
+
+    <!--<br />
+    <div class="form-row">
+        <h5>Quater target: physical / financial : </h5>
+    </div>
+
+    <div class="form-row">
+        <div class="form-holder form-holder-2">
+            <label for="room" class="special-label-1">Quater: </label>
+            <select name="room" id="room" class="form-control">
+                <option value="1">Quater 1</option>
+                <option value="2">Quater 2</option>
+                <option value="3">Quater 3</option>
+                <option value="4">Quater 4</option>
+            </select>
+            <span class="select-btn">
+                <i class="zmdi zmdi-chevron-down"></i>
+            </span>
+        </div>
+    </div>
+
+    <div class="form-row">
+        <div class="form-holder">
+            <label class="form-row-inner">
+                <input type="text" class="form-control" id="physical" name="nic_number" required>
+                <span class="label">Physical Count</span>
+            </label>
+        </div>
+    </div>
+
+    <div class="form-row">
+        <div class="form-holder">
+            <label class="form-row-inner">
+                <input type="text" class="form-control" id="financial" name="nic_number" required>
+                <span class="label">Financial Count</span>
+            </label>
+        </div>
+    </div>
+
+    <div class="form-holder form-holder-2" style="margin-left:30px;">
+        <a href="#">
+            <input type="button" class="primary-btn" value="Add" />
+        </a>
+    </div>
+
+    <div class="form-row">
+        <table class="table primary-table">
+            <thead class="table-active">
+                <tr>
+                    <th scope="col">Quater</th>
+                    <th scope="col">Physical Count</th>
+                    <th scope="col">Financial Count</th>
+                    <th scope="col">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+
+                    <td>Q1</td>
+                    <td>1</td>
+                    <td>1000</td>
+                    <td>
+                        <a href="/planning/1/updateTarget">
+                            <input type="button" class="primary-btn" value="Delete" style="height:30px;width:100px;font-size:0.9em;" />
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Q2</td>
+                    <td>1</td>
+                    <td>1000</td>
+                    <td>
+                        <a href="#">
+                            <input type="button" class="primary-btn" value="Delete" style="height:30px;width:100px;font-size:0.9em;" />
+                        </a>
+                    </td>
+                </tr>
+                <tr class="table-success">
+                    <th scope="row">Total</th>
+                    <td>1</td>
+                    <td>1000</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <br />-->
+    @*-------------------------------------------------------------------------*@
+
+
+    <!--<br />
+                                    <div class="form-row">
+                                        <h5>Expected results : </h5>
+                                    </div>
+
+
+                                    <div class="form-row">
+                                        <div class="form-holder form-holder-2">
+                                            <label for="room" class="special-label-1">Output: </label>
+                                            <select name="room" id="room" class="form-control">
+                                                <option value="1">Output 1</option>
+                                                <option value="2">Output 2</option>
+                                                <option value="3">Output 3</option>
+                                                <option value="4">Output 4</option>
+                                            </select>
+                                            <span class="select-btn">
+                                                <i class="zmdi zmdi-chevron-down"></i>
+                                            </span>
+                                        </div>
+                                        <div class="form-holder form-holder-2">
+                                            <label for="room" class="special-label-1">Outcome: </label>
+                                            <select name="room" id="room" class="form-control">
+                                                <option value="1">10</option>
+                                                <option value="2">20</option>
+                                                <option value="3">30</option>
+                                                <option value="4">40</option>
+                                            </select>
+                                            <span class="select-btn">
+                                                <i class="zmdi zmdi-chevron-down"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-row">
+                                    <table class="table primary-table">
+                                        <thead class="table-active">
+                                            <tr>
+                                                <th scope="col" style="width:100px;">Target Category</th>
+                                                <th scope="col"style="width:100px;">Program</th>
+                                                <th scope="col" style="width:200px;">Vote</th>
+                                                <th scope="col" style="width:200px;">Tot. Phy. target</th>
+                                                <th scope="col" style="width:200px;">Tot. Fin. target</th>
+                                                <th scope="col" style="width:120px;">Outcome</th>
+                                                <th scope="col" style="width:100px;">Output</th>
+                                                <th scope="col" style="width:100px;">Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Common</td>
+                                                <td>Program 1</td>
+                                                <td>323-02-01-02-1509</td>
+                                                <td>1</td>
+                                                <td>1000</td>
+                                                <td>Outcome 1</td>
+                                                <td>10</td>
+                                                <td>
+                                                    <a href="/planning/1/updateTarget">
+                                                        <input type="button" class="primary-btn" value="Edit" style="height:30px;width:100px;font-size:0.9em;" />
+                                                    </a>
+                                                    <br/><br/>
+                                                    <a href="/planning/1/updateTarget">
+                                                        <input type="button" class="primary-btn" value="Clear" style="height:30px;width:100px;font-size:0.9em;" />
+                                                    </a>
+
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <br />
+
+                                <br />
+                                <div class="form-row" style="margin-left:30px;">
+                                    <div class="form-holder form-holder-2">
+                                        <a href="/planning/1/addnewtarget">
+                                            <input type="button" class="primary-btn" value="Save" />
+                                        </a>
+                                    </div>
+                                    <br />
+                                    <div class="form-holder form-holder-2">
+                                        <a href="/planning/1">
+                                            <input type="button" class="primary-btn" value="Save & Submit to HQ" style="width:250px;" />
+                                        </a>
+                                    </div>
+                                    <br />
+                                    <div class="form-holder form-holder-2">
+                                        <input type="button" class="primary-btn" value="Clear" />
+                                    </div>
+                                    <br />
+                                </div>
+                            </section>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>-->
+    @*<div id="main">
+            <div class="page-content">
+                <div class="wizard-heading">Personal Information</div>
+                <div class="wizard-v6-content">
+                    <div class="wizard-form">
+                        <form class="form-register" id="form-register" action="#" method="post">
+                            <div id="form-total">
+                                <br />
+                                <section>
+                                    <div class="inner">
+                                        <div class="form-heading">
+                                            <h3>Personal Info</h3>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-holder">
+                                                <label class="form-row-inner">
+                                                    <input type="text" class="form-control" id="wnop_no" name="wnop_no" required>
+                                                    <span class="label">WNOP No</span>
+                                                </label>
+                                            </div>
+                                            <div class="form-holder">
+                                                <label class="form-row-inner">
+                                                    <input type="text" class="form-control" id="nic_number" name="nic_number" required>
+                                                    <span class="label">NIC Number</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-holder">
+                                                <label class="form-row-inner">
+                                                    <input type="text" class="form-control" id="personal_file_number" name="personal_file_number" required>
+                                                    <span class="label">Personal file number</span>
+                                                </label>
+                                            </div>
+                                            <div class="form-holder">
+                                                <label class="form-row-inner">
+                                                    <input type="text" class="form-control" id="nic_issue_date" name="nic_issue_date" required>
+                                                    <span class="label">NIC Issue Date</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-holder">
+                                                <label class="form-row-inner">
+                                                    <input type="text" class="form-control" id="appointment_letter_no" name="appointment_letter_no" required>
+                                                    <span class="label">Appointment Letter No</span>
+                                                </label>
+                                            </div>
+                                            <div class="form-holder">
+                                                <label class="form-row-inner">
+                                                    <input type="text" class="form-control" id="passport_number" name="passport_number" required>
+                                                    <span class="label">Passport Number</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-holder form-holder-2">
+                                                <label for="room" class="special-label-1">Service Type: </label>
+                                                <select name="room" id="room" class="form-control">
+                                                    <option value="Customs Service" selected>Customs Service</option>
+                                                    <option value="Educational Service">Educational Service</option>
+                                                    <option value="Accountants'Service">Accountants'Service</option>
+                                                </select>
+                                                <span class="select-btn">
+                                                    <i class="zmdi zmdi-chevron-down"></i>
+                                                </span>
+                                            </div>
+                                            <div class="form-holder form-holder-2">
+                                                <label for="room" class="special-label-1">Ethnicity: </label>
+                                                <select name="room" id="room" class="form-control">
+                                                    <option value="Sinhalese" selected>Sinhalese</option>
+                                                    <option value="Tamils">Tamils</option>
+                                                    <option value="Muslims">Muslims</option>
+                                                </select>
+                                                <span class="select-btn">
+                                                    <i class="zmdi zmdi-chevron-down"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-holder">
+                                                <label class="form-row-inner">
+                                                    <input type="text" class="form-control" id="employee_number" name="employee_number" required>
+                                                    <span class="label">Employee Number</span>
+                                                </label>
+                                            </div>
+                                            <div class="form-holder">
+                                                <label class="form-row-inner">
+                                                    <input type="text" class="form-control" id="leave_number" name="leave_number" required>
+                                                    <span class="label">Leave Number</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-holder form-holder-2">
+                                                <label for="room" class="special-label-1">Photograph: </label>
+                                                <button type="button" class="btn btn-secondary">Upload</button>
+                                            </div>
+                                            <div class="form-holder form-holder-2">
+                                                <label for="room" class="special-label-1">Religion: </label>
+                                                <select name="room" id="room" class="form-control">
+                                                    <option value="Buddhism" selected>Buddhism</option>
+                                                    <option value="Hinduism">Hinduism</option>
+                                                    <option value="Islam">Islam</option>
+                                                </select>
+                                                <span class="select-btn">
+                                                    <i class="zmdi zmdi-chevron-down"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="form-row form-row-date">
+                                            <div class="form-holder form-holder-2">
+                                                <label for="date" class="special-label">Last name:</label>
+                                                <select name="date" id="date" class="form-control">
+                                                    <option value="ABC" selected>ABC</option>
+                                                    <option value="GHI">GHI</option>
+                                                    <option value="JKL">JKL</option>
+                                                    <option value="PQR">PQR</option>
+                                                    <option value="XYZ">XYZ</option>
+                                                </select>
+                                                <label class="form-row-inner">
+                                                    <input type="text" class="form-control" id="empty" name="continue the name" required>
+                                                    <span class="label"></span>
+                                                </label>
+                                            </div>
+                                            <div class="form-holder">
+                                                <label class="form-row-inner">
+                                                    <input type="text" class="form-control" id="permanent_address" name="permanent_address" required>
+                                                    <span class="label">Permanent Address</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-holder form-holder-2">
+                                                <label class="form-row-inner">
+                                                    <input type="text" class="form-control" id="initials" name="initials" required>
+                                                    <span class="label">Initials</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>*@

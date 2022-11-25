@@ -1,0 +1,103 @@
+﻿using ManPowerCore.Common;
+using ManPowerCore.Domain;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ManPowerCore.Infrastructure
+{
+    public interface ProgramPlanDAO
+    {
+
+        List<ProgramPlan> GetAllProgramPlan(DBConnection dbConnection);
+
+        ProgramPlan GetProgramPlan(int id, DBConnection dbConnection);
+
+        int SaveProgramPlan(ProgramPlan programPlan, DBConnection dbConnection);
+
+        int UpdateProgramPlan(ProgramPlan programPlan, DBConnection dbConnection);
+    }
+
+    public class ProgramPlanDAOImpl : ProgramPlanDAO
+    {
+
+        public int getMaxProgramPlanId(DBConnection dbConnection)
+        {
+            dbConnection.cmd.CommandText = "SELECT NVL(MAX(ID),0) FROM PROGRAM_PLAN";
+            int orderId = Convert.ToInt32(dbConnection.cmd.ExecuteScalar());
+            if (orderId == 0)
+            {
+                orderId = 1;
+            }
+            else
+            {
+                orderId += 1;
+            }
+
+
+            return orderId;
+        }
+
+        public int SaveProgramPlan(ProgramPlan ProgramPlan, DBConnection dbConnection)
+        {
+            int id = getMaxProgramPlanId(dbConnection);
+
+            dbConnection.cmd.CommandType = System.Data.CommandType.Text;
+            dbConnection.cmd.CommandText = "INSERT INTO PROGRAM_PLAN(ID,PROJECT_STATUS_ID,PROGRAM_CATEGORY_ID,PROGRAM_TARGET_ID,DATE," +
+                                            "LOCATION,OUTCOME,OUTPUT,ACTUAL_OUTPUT,IS_APPROVED,APPROVED_BY,APPROVED_DATE," +
+                                            "TOTAL_ESTIMATED_AMOUNT,APPROVED_AMOUNT,ACTUAL_AMOUNT,MALE_COUNT,FEMALE_COUNT) " +
+
+                                 "VALUES(" + id + ",'" + ProgramPlan.ProjectStatusId + "'," + ProgramPlan.ProgramCategoryId + "," +
+                                 "'" + ProgramPlan.ProgramTargetId + "'," + ProgramPlan.Date + ",'" + ProgramPlan.Location + "'," +
+                                 "'" + ProgramPlan.Outcome + "'," + ProgramPlan.Output + ",'" + ProgramPlan.ActualOutput + "'," +
+                                 "'" + ProgramPlan.IsApproved + "','" + ProgramPlan.ApprovedBy + "','" + ProgramPlan.ApprovedDate + "'," +
+                                 "'" + ProgramPlan.TotalEstimatedAmount + "','" + ProgramPlan.ApprovedAmount + "','" + ProgramPlan.ActualAmount + "'," +
+                                 "'" + ProgramPlan.MaleCount + "','" + ProgramPlan.FemaleCount + "') ";
+
+            dbConnection.cmd.ExecuteNonQuery();
+
+
+            return dbConnection.cmd.ExecuteNonQuery();
+        }
+
+        public int UpdateProgramPlan(ProgramPlan programPlan, DBConnection dbConnection)
+        {
+            dbConnection.cmd.CommandText = "UPDATE PROGRAM_PLAN SET PROJECT_STATUS_ID = '" + programPlan.ProjectStatusId + "'," +
+                " PROGRAM_CATEGORY_ID = " + programPlan.ProgramCategoryId + ", PROGRAM_TARGET_ID = '" + programPlan.ProgramTargetId + "'," +
+                " DATE = " + programPlan.Date + ", LOCATION = '" + programPlan.Location + "'," +
+                " OUTCOME = '" + programPlan.Outcome + "', OUTPUT = " + programPlan.Output + "," +
+                " ACTUAL_OUTPUT = '" + programPlan.ActualOutput + "', IS_APPROVED = '" + programPlan.IsApproved + "'," +
+                " APPROVED_BY = '" + programPlan.ApprovedBy + "', APPROVED_DATE = '" + programPlan.ApprovedDate + "'," +
+                " TOTAL_ESTIMATED_AMOUNT = '" + programPlan.TotalEstimatedAmount + "',APPROVED_AMOUNT = '" + programPlan.ApprovedAmount + "'," +
+                " ACTUAL_AMOUNT = '" + programPlan.ActualAmount + "', MALE_COUNT = '" + programPlan.MaleCount + "'," +
+                " FEMALE_COUNT = '" + programPlan.FemaleCount + "' WHERE ID = " + programPlan.ProgramPlanId;
+
+            return dbConnection.cmd.ExecuteNonQuery();
+        }
+
+        public List<ProgramPlan> GetAllProgramPlan(DBConnection dbConnection)
+        {
+            dbConnection.cmd.CommandText = "SELECT * FROM PROGRAM_PLAN ORDER BY ID ";
+
+            dbConnection.dr = dbConnection.cmd.ExecuteReader();
+            DataAccessObject dataAccessObject = new DataAccessObject();
+            return dataAccessObject.ReadCollection<ProgramPlan>(dbConnection.dr);
+
+        }
+
+        public ProgramPlan GetProgramPlan(int id, DBConnection dbConnection)
+        {
+            dbConnection.cmd.CommandText = "SELECT * FROM PROGRAM_PLAN WHERE ID = " + id + " ";
+
+            dbConnection.dr = dbConnection.cmd.ExecuteReader();
+            DataAccessObject dataAccessObject = new DataAccessObject();
+            return dataAccessObject.GetSingleOject<ProgramPlan>(dbConnection.dr);
+
+        }
+    }
+
+
+
+}

@@ -1,0 +1,133 @@
+﻿using ManPowerCore.Common;
+using ManPowerCore.Domain;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ManPowerCore.Infrastructure
+{
+    public interface TaskAllocationDetailDAO
+    {
+
+        int SaveTaskAllocationDetail(TaskAllocationDetail taskAllocationDetail, DBConnection dbConnection);
+        int UpdateTaskAllocationDetail(TaskAllocationDetail taskAllocationDetail, DBConnection dbConnection);
+        List<TaskAllocationDetail> GetAllTaskAllocationDetail(DBConnection dbConnection);
+        TaskAllocationDetail GetTaskAllocationDetail(int id, DBConnection dbConnection);
+        List<TaskAllocationDetail> GetAllTaskAllocationDetailByTaskAllocationId(int taskAllocationId, DBConnection dbConnection);
+        List<TaskAllocationDetail> GetTaskAllocationDetailByTaskTypeId(int TaskTypeId, DBConnection dbConnection);
+
+    }
+
+
+    public class TaskAllocationDetailDAOImpl : TaskAllocationDetailDAO
+    {
+
+        public int getMaxTaskAllocationDetailId(DBConnection dbConnection)
+        {
+            dbConnection.cmd.CommandText = "SELECT ISNULL(MAX(ID),0) FROM TASK_ALLOCATION_DETAIL";
+            int orderId = Convert.ToInt32(dbConnection.cmd.ExecuteScalar());
+            if (orderId == 0)
+            {
+                orderId = 1;
+            }
+            else
+            {
+                orderId += 1;
+            }
+
+
+            return orderId;
+        }
+
+        public int SaveTaskAllocationDetail(TaskAllocationDetail taskAllocationDetail, DBConnection dbConnection)
+        {
+            int id = getMaxTaskAllocationDetailId(dbConnection);
+
+            dbConnection.cmd.CommandType = System.Data.CommandType.Text;
+            dbConnection.cmd.CommandText = "INSERT INTO TASK_ALLOCATION_DETAIL(ID,TASK_TYPE_ID,TASK_ALLOCATION_ID" +
+                                            ",TASK_DESCRIPTION,WORK_LOCATION,IS_COMPLEATED) " +
+                                            "VALUES(@id,@TaskTypeId,@TaskAllocationId,@TaskDescription,@WorkLocation,@IsCompleatedReason) ";
+
+
+                                          
+                                            dbConnection.cmd.Parameters.AddWithValue("@TaskTypeId", taskAllocationDetail.TaskTypeId);
+                                            dbConnection.cmd.Parameters.AddWithValue("@TaskAllocationId", taskAllocationDetail.TaskAllocationId);
+                                            dbConnection.cmd.Parameters.AddWithValue("@TaskDescription", taskAllocationDetail.TaskDescription);
+                                            dbConnection.cmd.Parameters.AddWithValue("@WorkLocation", taskAllocationDetail.WorkLocation);
+                                            dbConnection.cmd.Parameters.AddWithValue("@IsCompleatedReason", taskAllocationDetail.IsCompleatedReason);
+            
+
+            dbConnection.cmd.ExecuteNonQuery();
+
+
+            return dbConnection.cmd.ExecuteNonQuery();
+        }
+
+        public int UpdateTaskAllocationDetail(TaskAllocationDetail taskAllocationDetail, DBConnection dbConnection)
+        {
+            dbConnection.cmd.CommandText = "UPDATE TASK_ALLOCATION_DETAIL SET TASK_TYPE_ID = @TaskTypeId, TASK_ALLOCATION_ID = @TaskAllocationId " +
+                                           ", TASK_DESCRIPTION = @TaskDescription, WORK_LOCATION = @WorkLocation, IS_COMPLEATED = @IsCompleatedReason WHARE ID = @TaskAllocationDetailId, " +
+                                          
+                                            dbConnection.cmd.Parameters.AddWithValue("@TaskAllocationDetailId", taskAllocationDetail.TaskAllocationDetailId);
+                                            dbConnection.cmd.Parameters.AddWithValue("@TaskTypeId", taskAllocationDetail.TaskTypeId);
+                                            dbConnection.cmd.Parameters.AddWithValue("@TaskAllocationId", taskAllocationDetail.TaskAllocationId);
+                                            dbConnection.cmd.Parameters.AddWithValue("@TaskDescription", taskAllocationDetail.TaskDescription);
+                                            dbConnection.cmd.Parameters.AddWithValue("@WorkLocation", taskAllocationDetail.WorkLocation);
+                                            dbConnection.cmd.Parameters.AddWithValue("@IsCompleatedReason", taskAllocationDetail.IsCompleatedReason);
+
+
+
+
+
+            return dbConnection.cmd.ExecuteNonQuery();
+        }
+
+        public List<TaskAllocationDetail> GetAllTaskAllocationDetail(DBConnection dbConnection)
+        {
+            dbConnection.cmd.CommandText = "SELECT * FROM TASK_ALLOCATION_DETAIL ORDER BY ID ";
+
+            dbConnection.dr = dbConnection.cmd.ExecuteReader();
+            DataAccessObject dataAccessObject = new DataAccessObject();
+            return dataAccessObject.ReadCollection<TaskAllocationDetail>(dbConnection.dr);
+
+        }
+
+        public TaskAllocationDetail GetTaskAllocationDetail(int id, DBConnection dbConnection)
+        {
+            dbConnection.cmd.CommandText = "SELECT * FROM TASK_ALLOCATION_DETAIL WHERE ID = " + id + " ";
+
+            dbConnection.dr = dbConnection.cmd.ExecuteReader();
+            DataAccessObject dataAccessObject = new DataAccessObject();
+            return dataAccessObject.GetSingleOject<TaskAllocationDetail>(dbConnection.dr);
+
+        }
+
+
+        public List<TaskAllocationDetail> GetAllTaskAllocationDetailByTaskAllocationId(int taskAllocationId, DBConnection dbConnection)
+        {
+            dbConnection.cmd.CommandText = "SELECT * FROM TASK_ALLOCATION_DETAIL WHERE TASK_ALLOCATION_ID  = " + taskAllocationId + " ";
+
+            dbConnection.dr = dbConnection.cmd.ExecuteReader();
+            DataAccessObject dataAccessObject = new DataAccessObject();
+            return dataAccessObject.ReadCollection<TaskAllocationDetail>(dbConnection.dr);
+
+        }
+
+        public List<TaskAllocationDetail> GetTaskAllocationDetailByTaskTypeId(int TaskTypeId, DBConnection dbConnection)
+        {
+            dbConnection.cmd.CommandText = "SELECT * FROM TASK_ALLOCATION_DETAIL WHERE TASK_TYPE_ID  = " + TaskTypeId + " ";
+
+            dbConnection.dr = dbConnection.cmd.ExecuteReader();
+            DataAccessObject dataAccessObject = new DataAccessObject();
+            return dataAccessObject.ReadCollection<TaskAllocationDetail>(dbConnection.dr);
+
+        }
+
+    }
+
+}
+
+
+

@@ -1,0 +1,22 @@
+﻿//using ManPowerCore.Controller;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+
+namespace ManPowerCore.Common
+{
+    public class ControllerFactory
+    {
+
+
+        //public static CompanyController CreateCompanyController()
+        //{
+        //    CompanyController companyController = new CompanyControllerImpl();
+        //    return (CompanyController)companyController;
+        //}
+    }
+}
+    

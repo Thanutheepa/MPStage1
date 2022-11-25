@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "vSZJqBz8qvrKD1Nw9jxYSkEYlUu0XcSq3gHXAtCH+qmfS8RlH8he8Y8xzpExHlJsW1qKsTvo8Jcmcf1lsqbkjg==",
+  "success": true,
+  "projectFilePath": "D:\\Belvantage\\Projects\\ManPower\\ManPowerWeb\\ManPowerWeb.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\MSI GAMER\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.25\\microsoft.netcore.app.host.win-x64.3.1.25.nupkg.sha512"
+  ],
+  "logs": []
+}

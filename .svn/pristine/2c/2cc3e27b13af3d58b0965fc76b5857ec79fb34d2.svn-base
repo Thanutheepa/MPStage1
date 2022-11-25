@@ -1,0 +1,108 @@
+﻿using ManPowerCore.Common;
+using ManPowerCore.Domain;
+using ManPowerCore.Infrastructure;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ManPowerCore.Controller
+{
+    public interface DepartmentUnitController
+    {
+        int SaveDepartmentUnit(DepartmentUnit departmentunit);
+        int UpdateDepartmentUnit(DepartmentUnit departmentunit);
+        List<DepartmentUnit> GetAllDepartmentUnit();
+        DepartmentUnit GetDepartmentUnit(int id);
+    }
+
+    public class DepartmentUnitControllerImpl : DepartmentUnitController
+    {
+        DBConnection dBConnection;
+        DepartmentUnitDAO departmentUnitDAO = DAOFactory.CreateDepartmentUnitDAO();
+        public int SaveDepartmentUnit(DepartmentUnit departmentunit)
+        {
+            try
+            {
+                dBConnection = new DBConnection();
+                return departmentUnitDAO.SaveDepartmentUnit(departmentunit, dBConnection);
+            }
+            catch (Exception)
+            {
+                dBConnection.RollBack();
+
+                throw;
+            }
+            finally
+            {
+                if (dBConnection.con.State == System.Data.ConnectionState.Open)
+                    dBConnection.Commit();
+            }
+        }
+
+        public int UpdateDepartmentUnit(DepartmentUnit departmentunit)
+        {
+            try
+            {
+                dBConnection = new DBConnection();
+                var departmentunitDetails = departmentUnitDAO.UpdateDepartmentUnit(departmentunit, dBConnection);
+                return departmentunitDetails;
+            }
+            catch (Exception)
+            {
+                dBConnection.RollBack();
+
+                throw;
+            }
+            finally
+            {
+                if (dBConnection.con.State == System.Data.ConnectionState.Open)
+                    dBConnection.Commit();
+            }
+        }
+
+        public List<DepartmentUnit> GetAllDepartmentUnit()
+        {
+            try
+            {
+                dBConnection = new DBConnection();
+                List<DepartmentUnit> list = departmentUnitDAO.GetAllDepartmentUnit(dBConnection);
+                return list;
+
+            }
+            catch (Exception)
+            {
+                dBConnection.RollBack();
+                throw;
+            }
+            finally
+            {
+                if (dBConnection.con.State == System.Data.ConnectionState.Open)
+                    dBConnection.Commit();
+            }
+
+        }
+
+        public DepartmentUnit GetDepartmentUnit(int id)
+        {
+            DBConnection dbConnection = new DBConnection();
+            try
+            {
+                DepartmentUnitDAO DAO = DAOFactory.CreateDepartmentUnitDAO();
+                return DAO.GetDepartmentUnit(id, dbConnection);
+            }
+            catch (Exception ex)
+            {
+                dbConnection.RollBack();
+                throw;
+            }
+            finally
+            {
+                if (dbConnection.con.State == System.Data.ConnectionState.Open)
+                    dbConnection.Commit();
+            }
+        }
+
+    }
+}
